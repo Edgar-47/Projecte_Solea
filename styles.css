@@ -1,0 +1,135 @@
+/* Arxiu d'estils */
+/* Logo Header */
+:root {
+    --solea-bg: #FDF9F4;
+    --solea-blue: #52798E;
+    --solea-text: #3b4a4f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #FDF9F4 ;
+    color: var(--solea-text);
+}
+
+.site-header {
+    background-color: var(--solea-bg);
+    border-bottom: 1px solid rgba(0,0,0,0.02);
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo-area {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.logo-link {
+    display: inline-block;
+}
+
+.logo-img {
+    height: 210px;  
+    width: auto;
+    display: block;
+}
+
+.logo-tagline {
+    margin: 0;
+    font-size: 0.80rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.45);
+    line-height: 1.4;
+}
+
+.logo-tagline span {
+    font-size: 0.5rem;
+    letter-spacing: 0.22em;
+}
+
+
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 40px;          
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-family: "Playfair Display", "Times New Roman", serif;
+    font-size: 10px;
+    color: var(--solea-blue);
+    letter-spacing: 0.06em;
+    text-transform: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.main-nav a:hover {
+    opacity: 0.7;
+    transform: translateY(-1px);
+}
+h1{
+    font-family: "Instrument Serif", serif;
+    font-size: 35px;
+    font-weight: normal;
+    color: #52798E;
+}
+/* SECCIÓN INTRO */
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 80px 120px;   /* Márgenes elegantes */
+}
+
+.intro-text {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.intro-text h1 {
+    font-family: "Instrument Serif", serif;
+    font-weight: normal;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #52798E;
+}
+
+.intro-text p {
+    max-width: 550px; /* Controla el ancho para lectura premium */
+}
+
+/* Imagen derecha */
+.intro-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 50px;
+    object-fit: cover;
+    transform: scale(1);
+}
+.intro-image :hover{
+    transform: scale(1.10);
+    transition: transform  1s ease-in-out, opacity 1s ease, box-shadow 1s ease;
+    box-shadow: 5px 40px 50px rgba(0,0,0,0.2);
+}
+
