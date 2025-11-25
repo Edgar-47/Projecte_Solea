@@ -202,6 +202,15 @@ h1 {
     font-size: 0.95rem;
     line-height: 1.6;
 }
+/* empuja el texto cuando la imagen va a la izquierda */
+.precio-row:nth-child(odd) .precio-content {
+    margin-left: 500px;
+}
+
+/* empuja el texto cuando la imagen va a la derecha */
+.precio-row:nth-child(even) .precio-content {
+    margin-right: 500px;
+}
 
 .precio-content h3 {
     margin: 0 0 8px;
@@ -221,6 +230,49 @@ h1 {
     margin-top: 10px;
     font-weight: 600;
     font-size: 17px;
+}
+/* secció clients satisfets */
+.stats-section {
+    padding: 60px 120px 40px;
+    text-align: center;
+}
+
+.stats-section h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    font-family: "Instrument Serif", serif;
+    font-weight: normal;
+    color: var(--solea-blue);
+}
+
+/* línia de quatre estadístiques */
+.stats-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* cada element */
+.stat-item {
+    font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* número gran */
+.stat-number {
+    margin: 0 0 6px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #555555;
+}
+
+/* text de sota */
+.stat-label {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #555555;
 }
 
 /* peu footer */
