@@ -5,7 +5,7 @@
     --solea-text: #3b4a4f;
 }
 
-/* resset basica */
+/* reset bàsic */
 * {
     box-sizing: border-box;
 }
@@ -16,6 +16,15 @@ body {
     font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: var(--solea-bg);
     color: var(--solea-text);
+}
+
+/* titols generals */
+h1,
+h2,
+h3 {
+    font-family: "Instrument Serif", serif;
+    font-weight: normal;
+    color: var(--solea-blue);
 }
 
 /* capcalera estil */
@@ -150,66 +159,11 @@ h1 {
     transform: scale(1.10);
     box-shadow: 5px 40px 50px rgba(0,0,0,0.2);
 }
-/* sección precios */
-.precios-section {
-    padding: 80px 120px 60px;
-}
 
-.precios-section h2 {
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 50px;
-}
-
-/* lista de precios */
-.precios-lista {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-/* fila precio */
-.precio-row {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-/* alternar orden (como la maqueta) */
-.precio-row:nth-child(even) {
-    flex-direction: row-reverse;
-}
-
-/* imagen precio */
-.precio-imagen img {
-    width: 400px;
-    height: 400px;
-    border-radius: 50px;
-    object-fit: cover;
-    transform: scale(1);
-    transition: transform 1s ease, box-shadow 1s ease;
-}
-
-/* hover imagen precio */
-.precio-imagen img:hover {
-    transform: scale(1.10);
-    box-shadow: 5px 40px 50px rgba(0,0,0,0.2);
-}
-/* contenido precio */
+/* contingut preus */
 .precio-content {
-    flex: 1;
-    max-width: 480px;
     font-size: 0.95rem;
     line-height: 1.6;
-}
-/* empuja el texto cuando la imagen va a la izquierda */
-.precio-row:nth-child(odd) .precio-content {
-    margin-left: 500px;
-}
-
-/* empuja el texto cuando la imagen va a la derecha */
-.precio-row:nth-child(even) .precio-content {
-    margin-right: 500px;
 }
 
 .precio-content h3 {
@@ -217,7 +171,7 @@ h1 {
     font-family: "Instrument Serif", serif;
     font-weight: normal;
     color: var(--solea-blue);
-    font-size: 35px;
+    font-size: 2.1rem;
 }
 
 .precio-content p {
@@ -229,29 +183,35 @@ h1 {
     font-family: "Instrument Serif", serif;
     margin-top: 10px;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 1.1rem;
 }
+/* ---- CAROUSEL SOLEA ---- */
+/* ---- CAROUSEL SOLEA ---- */
+.carousel-wrapper {
+    max-width: 650px;       /* ancho máximo del “cuadro” */
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;       /* recorta bordes redondeados */
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* altura controlada + mismas proporciones */
+.carousel-wrapper .carousel img {
+    height: 650px;          /* controla la altura del carrusel */
+    width: 100%;            /* ocupa todo el wrapper */
+    object-fit: cover;      /* recorta elegante sin deformar */
+    object-position: 50% 25%; /* ajusta qué parte se ve */
+}
+
+
 /* secció clients satisfets */
 .stats-section {
-    padding: 60px 120px 40px;
-    text-align: center;
+    background-color: var(--solea-bg);
 }
 
-.stats-section h2 {
-    font-size: 3rem;
-    margin-bottom: 40px;
-    font-family: "Instrument Serif", serif;
-    font-weight: normal;
-    color: var(--solea-blue);
-}
-
-/* línia de quatre estadístiques */
 .stats-grid {
     max-width: 900px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
 }
 
 /* cada element */
@@ -263,7 +223,7 @@ h1 {
 .stat-number {
     margin: 0 0 6px;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #555555;
 }
 
@@ -274,15 +234,131 @@ h1 {
     font-size: 1rem;
     color: #555555;
 }
+/* --- ALBUM SERVEIS (tipus Bootstrap) --- */
+
+.album-section {
+    background-color: var(--solea-bg);
+}
+
+.album-subtitle {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(0,0,0,0.55);
+    font-size: 0.95rem;
+}
+
+/* columna del grid */
+.album-card .card {
+    border-radius: 22px;
+    border: none;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* hover targeta */
+.album-card .card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* imatge superior */
+.album-img {
+    height: 230px;
+    object-fit: cover;
+    border-radius: 22px 22px 0 0;
+}
+
+/* títol i text dins la card */
+.album-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.album-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #3b4a4f;
+}
+
+/* botó estil Solea */
+.album-btn {
+    border-radius: 999px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid var(--solea-blue);
+    background-color: transparent;
+    color: var(--solea-blue);
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.album-btn:hover {
+    background-color: var(--solea-blue);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+/* secció ressenyes */
+.reviews-section {
+    background-color: var(--solea-bg);
+}
+
+/* targeta ressenya */
+.review-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 30px 28px 40px;
+    text-align: left;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 10px 20px 40px #52798E;
+}
+
+/* text ressenya */
+.review-card blockquote {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    font-style: italic;
+}
+
+/* peu targeta */
+.review-card footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* usuari */
+.review-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.review-user img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Google stars */
+.review-stars {
+    width: 80px;
+    opacity: 0.85;
+}
 
 /* peu footer */
 .site-footer {
     background-color: var(--solea-bg);
-    padding: 40px 120px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 1px solid rgba(0,0,0,0.02);
 }
 
 /* marca footer */
@@ -346,79 +422,22 @@ h1 {
     opacity: 1;
     transform: translateY(-2px);
 }
-/* secció ressenyes */
-.reviews-section {
-    padding: 80px 120px;
-    text-align: center;
+
+/* responsiu bàsic */
+@media (max-width: 992px) {
+    .logo-img {
+        height: 150px;
+    }
+
+    .intro-text p {
+        max-width: 100%;
+    }
+
+    .precio-img-round {
+        height: 320px;
+    }
+
+    .section-title {
+        font-size: 2.4rem;
+    }
 }
-
-.reviews-section h2 {
-    font-size: 3rem;
-    margin-bottom: 50px;
-}
-
-/* grid ressenyes */
-.reviews-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-}
-
-/* targeta ressenya */
-.review-card {
-    background: #ffffff;
-    border-radius: 18px;
-    padding: 30px 28px 40px;
-    text-align: left;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.review-card:hover {
-    transform: translateY(-15px);
-    box-shadow: 10px 20px 40px #52798E;
-
-}
-
-/* text ressenya */
-.review-card blockquote {
-    font-size: 1.05rem;
-    line-height: 1.6;
-    margin: 0 0 20px 0;
-    font-style: italic;
-}
-
-/* peu targeta */
-.review-card footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* usuari */
-.review-user {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
-.review-user img {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* Google stars */
-.review-stars {
-    width: 80px;
-    opacity: 0.85;
-}
-/* evitar que el footer se solapi amb la secció anterior */
-.reviews-section {
-    margin-bottom: 120px;
-}
-
-

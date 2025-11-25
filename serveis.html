@@ -9,7 +9,9 @@
     <!-- tipografies elegants -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <!-- full estils -->
     <link rel="stylesheet" href="serveis.css">
 </head>
@@ -46,253 +48,253 @@
     <main>
 
         <!-- seccio introduccio -->
-        <section class="intro-section">
-            <!-- text introductori -->
-            <article class="intro-text">
-                <h1>Serveis de Solea</h1>
-                <p>
-                    El servei de càtering de Solea és la manera més refinada i premium
-                     de portar la nostra essència Mediterrània al teu esdeveniment. 
-                     Creem experiències que destaquen pel detall, la presentació i 
-                     l’elegància, treballant sempre amb productes seleccionats i una 
-                     execució perfecta que transmet professionalitat des del primer 
-                     instant. 
-                </p>
-                <p>    
-                     Oferim càtering per a empreses i esdeveniments amb propostes 
-                     gastronòmiques cuidades i una imatge impecable; un càtering de còctels 
-                     amb cocteleria d’autor i un ambient chill-out que transforma qualsevol 
-                     trobada en un moment especial; serveis de maridatge de vins amb seleccions 
-                     pensades per sorprendre i elevar el nivell; i càtering de cafè amb cafè 
-                     d’especialitat per aportar un toc de distinció i energia. 
-                </p> 
-                <p>
-                     Cada servei està 
-                     dissenyat perquè el teu acte respiri qualitat, estil i aquesta sensació 
-                     de “tot està sota control” que només ofereix un càtering premium de veritat. 
-                     Amb Solea, el teu esdeveniment passa de ser bo… a ser memorable.
-                </p>
-            </article>
-
-            <!-- imatge introductoria -->
-            <figure class="intro-image">
-                <img src="img/Serveis_fondo.png" alt="Espai Solea">
-            </figure>
-        </section>
-
-        <!-- sección precios -->
-        <section class="precios-section" aria-labelledby="precios-title">
-            <h2 id="precios-title">Precios</h2>
-
-            <div class="precios-lista">
-
-                <!-- 1. Caterings para empresas -->
-                <article class="precio-row">
-                    <figure class="precio-imagen">
-                        <img src="img/Solea_Catering.png" alt="Catering para empresas y eventos">
-                    </figure>
-                    <div class="precio-content">
-                        <h3>Càtering per a empreses i esdeveniments</h3>
-                        <p>
-                            Servei professional i cuidat fins al detall perquè les teves reunions, 
-                            celebracions o actes corporatius transmetin qualitat i bona imatge des del primer moment.
-                            Càtering personalitzat amb propostes gastronòmiques adaptades a cada ocasió.
-                        </p>
-                        <p class="precio-cantidad">Fins 1399€</p>
+        <section class="intro-section py-5">
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    <!-- text introductori -->
+                    <div class="col-lg-6">
+                        <article class="intro-text">
+                            <h1>Serveis de Solea</h1>
+                            <p>
+                                El servei de càtering de Solea és la manera més refinada i premium
+                                de portar la nostra essència Mediterrània al teu esdeveniment. 
+                                Creem experiències que destaquen pel detall, la presentació i 
+                                l’elegància, treballant sempre amb productes seleccionats i una 
+                                execució perfecta que transmet professionalitat des del primer 
+                                instant.
+                            </p>
+                            <p>    
+                                Oferim càtering per a empreses i esdeveniments amb propostes 
+                                gastronòmiques cuidades i una imatge impecable; un càtering de còctels 
+                                amb cocteleria d’autor i un ambient chill-out que transforma qualsevol 
+                                trobada en un moment especial; serveis de maridatge de vins amb seleccions 
+                                pensades per sorprendre i elevar el nivell; i càtering de cafè amb cafè 
+                                d’especialitat per aportar un toc de distinció i energia. 
+                            </p> 
+                            <p>
+                                Cada servei està dissenyat perquè el teu acte respiri qualitat, estil 
+                                i aquesta sensació de “tot està sota control” que només ofereix un 
+                                càtering premium de veritat. Amb Solea, el teu esdeveniment passa de ser bo… 
+                                a ser memorable.
+                            </p>
+                        </article>
                     </div>
-                </article>
 
-                <!-- 2. Catering de cócteles -->
-                <article class="precio-row">
-                    <figure class="precio-imagen">
-                        <img src="img/Solea_Cocktail.png" alt="Catering de cócteles">
-                    </figure>
-                    <div class="precio-content">
-                        <h3>Càtering de còcteles</h3>
-                        <p>
-                            Cocteleria d’autor i presentacions elegants per donar 
-                            un toc exclusiu
-                             als teus esdeveniments. Ambient sofisticat, servei fluid i 
-                             experiència premium.
-                        </p>
-                        <p class="precio-cantidad">Desde 499€</p>
+                    <!-- imatge introductoria -->
+                    <div class="col-lg-6 text-center text-lg-end">
+                        <figure class="intro-image m-0">
+                            <img src="img/Serveis_fondo.png" alt="Espai Solea" class="img-fluid intro-image-img">
+                        </figure>
                     </div>
-                </article>
-
-                <!-- 3. Catering de café -->
-                <article class="precio-row">
-                    <figure class="precio-imagen">
-                        <img src="img/Solea_Coffee2.png" alt="Catering de café">
-                    </figure>
-                    <div class="precio-content">
-                        <h3>Càtering de cafè</h3>
-                        <p>
-                            Cafè d’especialitat servit amb estil, ideal per a 
-                            empreses i esdeveniments que necessiten començar 
-                            amb energia i deixar una impressió impecable.
-                        </p>
-                        <p class="precio-cantidad">Desde 199€</p>
-                    </div>
-                </article>
-
-                <!-- 4. Maridaje de vino -->
-                <article class="precio-row">
-                    <figure class="precio-imagen">
-                        <img src="img/Solea_Maridaje_2.png" alt="Maridaje de vino">
-                    </figure>
-                    <div class="precio-content">
-                        <h3>Maridatge de vi</h3>
-                        <p>
-                            Selecció de vins d’alta qualitat combinats amb 
-                            propostes gastronòmiques que realcen sabors i 
-                            creen una experiència sensorial única i memorable.
-                        </p>
-                        <p class="precio-cantidad">Desde 899€</p>
-                    </div>
-                </article>
-
+                </div>
             </div>
         </section>
-                <!-- secció clients satisfets -->
-        <section class="stats-section" aria-labelledby="stats-title">
-            <h2 id="stats-title">Clients satisfets</h2>
-
-            <div class="stats-grid">
-                <article class="stat-item">
-                    <p class="stat-number">+ 4500</p>
-                    <p class="stat-label">Serveis</p>
-                </article>
-
-                <article class="stat-item">
-                    <p class="stat-number">+ 650</p>
-                    <p class="stat-label">Maridatges</p>
-                </article>
-
-                <article class="stat-item">
-                    <p class="stat-number">+ 3000</p>
-                    <p class="stat-label">Càterings</p>
-                </article>
-
-                <article class="stat-item">
-                    <p class="stat-number">+ 3500</p>
-                    <p class="stat-label">Clients</p>
-                </article>
-            </div>
+                <!-- sección precios -->
+        <section class="precios-section py-5" aria-labelledby="precios-title">
+            <!-- ... TU CONTENIDO DE PRECIOS ACTUAL ... -->
         </section>
 
+        <!-- album serveis estil Bootstrap -->
+        <section class="album-section py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">Gamma de serveis</h2>
+                <p class="text-center mb-5 album-subtitle">
+                    Descobreix la nostra selecció de serveis dissenyats per oferir-te 
+                    experiències gastronòmiques inoblidables i adaptades a les teves necessitats
+                </p>
 
-                <!-- secció ressenyes -->
-        <section class="reviews-section" aria-labelledby="reviews-title">
-            <h2 id="reviews-title">Ressenyes</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
-            <div class="reviews-grid">
-
-                <article class="review-card">
-                    <blockquote>“Un lloc fantàstic i superbònic”</blockquote>
-                    <footer>
-                        <div class="review-user">
-                            <img src="img/Client1.png" alt="Foto usuari Jose">
-                            <span>Laura</span>
+                    <!-- Card 1: Càtering empreses -->
+                    <div class="col album-card">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/Solea_chef.png" class="card-img-top album-img" alt="Catering per a empreses i esdeveniments">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title album-title">Càtering per a empreses i esdeveniments</h3>
+                                <p class="card-text album-text">
+                                    Servei professional i cuidat fins al detall perquè les teves reunions 
+                                    i actes corporatius transmetin qualitat i bona imatge des del primer moment.
+                                </p>
+                                <p class="precio-cantidad mt-auto mb-3">Apartir de 1399€</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn album-btn">Sol·licita pressupost</button>
+                                    <small class="text-muted">Esdeveniments corporatius</small>
+                                </div>
+                            </div>
                         </div>
-                        <img src="img/google_reviews.png" alt="Google Reviews" class="review-stars">
-                    </footer>
-                </article>
+                    </div>
 
-                <article class="review-card">
-                    <blockquote>“El millor cafè de la zona”</blockquote>
-                    <footer>
-                        <div class="review-user">
-                            <img src="img/Client2.png" alt="Foto usuària Laura">
-                            <span>Jose</span>
+                    <!-- Card 2: Còctels -->
+                    <div class="col album-card">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/Solea_Cocktail.png" class="card-img-top album-img" alt="Càtering de còctels">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title album-title">Càtering de còctels</h3>
+                                <p class="card-text album-text">
+                                    Cocteleria d’autor, presentacions elegants i ambient chill-out 
+                                    per transformar qualsevol trobada en un moment especial.
+                                </p>
+                                <p class="precio-cantidad mt-auto mb-3">Apartir de 499€</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn album-btn">Sol·licita pressupost</button>
+                                    <small class="text-muted">Afterworks, festes privades</small>
+                                </div>
+                            </div>
                         </div>
-                        <img src="img/google_reviews.png" alt="Google Reviews" class="review-stars">
-                    </footer>
-                </article>
+                    </div>
 
-                <article class="review-card">
-                    <blockquote>“Un menjar boníssim”</blockquote>
-                    <footer>
-                        <div class="review-user">
-                            <img src="img/Client3.png" alt="Foto usuari Marc">
-                            <span>Marc</span>
+                    <!-- Card 3: Cafè -->
+                    <div class="col album-card">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/Solea_Coffee2.png" class="card-img-top album-img" alt="Càtering de cafè">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title album-title">Càtering de cafè</h3>
+                                <p class="card-text album-text">
+                                    Cafè d’especialitat servit amb estil, ideal per començar la jornada 
+                                    amb energia i deixar una impressió impecable.
+                                </p>
+                                <p class="precio-cantidad mt-auto mb-3">Apartir de 199€</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn album-btn">Sol·licita pressupost</button>
+                                    <small class="text-muted">Coffee breaks i jornades</small>
+                                </div>
+                            </div>
                         </div>
-                        <img src="img/google_reviews.png" alt="Google Reviews" class="review-stars">
-                    </footer>
-                </article>
+                    </div>
 
-                <article class="review-card">
-                    <blockquote>“Ambient preciós i menjar molt cuidat. Tornaré a contractar-los.”</blockquote>
-                    <footer>
-                        <div class="review-user">
-                            <img src="img/Client4.png" alt="Foto usuari Aleix">
-                            <span>Aleix</span>
+                    <!-- Card 4: Maridatge de vi -->
+                    <div class="col album-card">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/Solea_Maridaje_2.png" class="card-img-top album-img" alt="Maridatge de vi">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title album-title">Maridatge de vi</h3>
+                                <p class="card-text album-text">
+                                    Selecció de vins d’alta qualitat combinats amb propostes gastronòmiques 
+                                    que realcen sabors i creen una experiència sensorial única.
+                                </p>
+                                <p class="precio-cantidad mt-auto mb-3">Apartir de 899€</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn album-btn">Sol·licita pressupost</button>
+                                    <small class="text-muted">Experiències gurmet</small>
+                                </div>
+                            </div>
                         </div>
-                        <img src="img/google_reviews.png" alt="Google Reviews" class="review-stars">
-                    </footer>
-                </article>
+                    </div>
 
-                <article class="review-card">
-                    <blockquote>“Els còctels són finíssims i molt ben equilibrats.”</blockquote>
-                    <footer>
-                        <div class="review-user">
-                            <img src="img/Client5.png" alt="Foto usuari Iker">
-                            <span>Paula</span>
+                </div>
+            </div>
+        </section>
+        <!-- secció clients satisfets -->
+        <section class="stats-section py-5" aria-labelledby="stats-title">
+            <div class="container text-center">
+                <h2 id="stats-title" class="section-title mb-4">Clients satisfets</h2>
+
+                <div class="row g-4 justify-content-center stats-grid">
+                    <div class="col-12 col-md-4">
+                        <article class="stat-item">
+                            <p class="stat-number">+ 9500</p>
+                            <p class="stat-label">Serveis Realitzats</p>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <article class="stat-item">
+                            <p class="stat-number">+ 3500</p>
+                            <p class="stat-label">Clients Recurrents</p>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <article class="stat-item">
+                            <p class="stat-number">+ 150</p>
+                            <p class="stat-label">Treballadors Fixes</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- secció carrusel imatges -->
+        <section class="py-5">
+            <div class="container d-flex justify-content-center">
+                <div class="carousel-wrapper">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
                         </div>
-                        <img src="img/google_reviews.png" alt="Google Reviews" class="review-stars">
-                    </footer>
-                </article>
 
-                <article class="review-card">
-                    <blockquote>“Una fusió mediterrània molt ben executada.”</blockquote>
-                    <footer>
-                        <div class="review-user">
-                            <img src="img/Client6.png" alt="Foto usuària Paula">
-                            <span>Clara</span>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="img/Solea_Taula.png" alt="Taula Solea">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Solea_Camarers.png" alt="Camarers Solea">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Serveis_fondo.png" alt="Espai Solea">
+                            </div>
                         </div>
-                        <img src="img/google_reviews.png" alt="Google Reviews" class="review-stars">
-                    </footer>
-                </article>
 
+                        <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Següent</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
 
     </main>
+
     <!-- peu pagina -->
-    <footer class="site-footer">
+    <footer class="site-footer border-top py-4">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-4">
+            <!-- marca footer -->
+            <section class="footer-brand">
+                <a href="index.html" class="footer-logo-link">
+                    <img src="img/Solea_logo_notext.png" alt="Solea - Catering, Coffee & Cocktails" class="footer-logo-img">
+                </a>
+                <p class="footer-tagline">
+                    CATERING, COFFEE & COCKTAILS<br>
+                    <span>MIAMI PLATJA</span>
+                </p>
+            </section>
 
-        <!-- marca footer -->
-        <section class="footer-brand">
-            <a href="index.html" class="footer-logo-link">
-                <img src="img/Solea_logo_notext.png" alt="Solea - Catering, Coffee & Cocktails" class="footer-logo-img">
-            </a>
-            <p class="footer-tagline">
-                CATERING, COFFEE & COCKTAILS<br>
-                <span>MIAMI PLATJA</span>
-            </p>
-        </section>
-
-        <!-- socials footer -->
-        <section class="footer-social">
-            <ul class="social-list">
-                <li>
-                    <a href="#" aria-label="Facebook">
-                        <img src="img/Facebook_logo_fosc.png" alt="Facebook">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" aria-label="Instagram">
-                        <img src="img/Instagram_logo_fosc.png" alt="Instagram">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" aria-label="Tik Tok">
-                        <img src="img/TikTok_logo_fosc.png" alt="Tik Tok">
-                    </a>
-                </li>
-            </ul>
-        </section>
-
+            <!-- socials footer -->
+            <section class="footer-social">
+                <ul class="social-list">
+                    <li>
+                        <a href="#" aria-label="Facebook">
+                            <img src="img/Facebook_logo_fosc.png" alt="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Instagram">
+                            <img src="img/Instagram_logo_fosc.png" alt="Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Tik Tok">
+                            <img src="img/TikTok_logo_fosc.png" alt="Tik Tok">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </footer>
 
+    <!-- Bootstrap JS (opcional però recomanable) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
