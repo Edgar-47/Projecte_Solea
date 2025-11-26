@@ -1,16 +1,22 @@
-/* variables globals */
+/* ========================= */
+/*  VARIABLES GLOBALS SOLEA  */
+/* ========================= */
 :root {
     --solea-bg: #FDF9F4;
     --solea-blue: #52798E;
     --solea-text: #3b4a4f;
 }
 
-/* reset bàsic */
+/* ============== */
+/* RESET BÀSIC    */
+/* ============== */
 * {
     box-sizing: border-box;
 }
 
-/* cos pagina */
+/* ============== */
+/* COS PÀGINA     */
+/* ============== */
 body {
     margin: 0;
     font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -18,7 +24,9 @@ body {
     color: var(--solea-text);
 }
 
-/* titols generals */
+/* ================== */
+/* TÍTOLS GENERALS    */
+/* ================== */
 h1,
 h2,
 h3 {
@@ -27,13 +35,20 @@ h3 {
     color: var(--solea-blue);
 }
 
-/* capcalera estil */
+/* títol principal */
+h1 {
+    font-size: 35px;
+}
+
+/* ========================= */
+/* CAPÇALERA / NAVBAR SOLEA */
+/* ========================= */
 .site-header {
     background-color: var(--solea-bg);
     border-bottom: 1px solid rgba(0,0,0,0.02);
 }
 
-/* capcalera interior */
+/* capçalera interior */
 .header-inner {
     max-width: 1200px;
     margin: 0 auto;
@@ -50,7 +65,7 @@ h3 {
     gap: 4px;
 }
 
-/* enllac logo */
+/* enllaç logo */
 .logo-link {
     display: inline-block;
 }
@@ -78,7 +93,7 @@ h3 {
     letter-spacing: 0.22em;
 }
 
-/* menu llista */
+/* menú llista */
 .main-nav ul {
     margin: 0;
     padding: 0;
@@ -87,7 +102,7 @@ h3 {
     gap: 40px;
 }
 
-/* enllacos menu */
+/* enllaços menú */
 .main-nav a {
     text-decoration: none;
     font-family: "Playfair Display", "Times New Roman", serif;
@@ -98,26 +113,15 @@ h3 {
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-/* hover menu */
+/* hover menú */
 .main-nav a:hover {
     opacity: 0.7;
     transform: translateY(-1px);
 }
 
-/* titols generals */
-h1,
-h2 {
-    font-family: "Instrument Serif", serif;
-    font-weight: normal;
-    color: var(--solea-blue);
-}
-
-/* titol principal */
-h1 {
-    font-size: 35px;
-}
-
-/* seccio intro */
+/* ===================== */
+/* HERO / INTRO-SECCIÓ   */
+/* ===================== */
 .intro-section {
     display: flex;
     align-items: center;
@@ -133,13 +137,13 @@ h1 {
     line-height: 1.6;
 }
 
-/* titol intro */
+/* títol intro */
 .intro-text h1 {
     font-size: 3rem;
     margin-bottom: 20px;
 }
 
-/* parraf intro */
+/* paràgraf intro */
 .intro-text p {
     max-width: 550px;
 }
@@ -154,13 +158,57 @@ h1 {
     transition: transform 1s ease, box-shadow 1s ease;
 }
 
-/* hover intro */
+/* hover intro img */
 .intro-image img:hover {
     transform: scale(1.10);
     box-shadow: 5px 40px 50px rgba(0,0,0,0.2);
 }
 
-/* contingut preus */
+/* ===================== */
+/* SECCIÓ QUI SOM / WHO  */
+/* ===================== */
+.who-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 80px 120px;
+}
+
+/* imatge qui som */
+.who-image img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50px;
+    object-fit: cover;
+    transition: transform 1s ease, box-shadow 1s ease;
+}
+
+.who-image img:hover {
+    transform: scale(1.10);
+    box-shadow: 5px 40px 50px rgba(0,0,0,0.2);
+}
+
+/* text qui som */
+.who-we-are {
+    flex: 1;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 580px;
+}
+
+.who-we-are h2 {
+    margin-bottom: 20px;
+}
+
+.who-we-are p {
+    max-width: 580px;
+}
+
+/* ===================== */
+/* SECCIÓ PREUS / PRECIO */
+/* ===================== */
 .precio-content {
     font-size: 0.95rem;
     line-height: 1.6;
@@ -178,33 +226,80 @@ h1 {
     margin: 0 0 4px;
 }
 
-/* cantidad precio */
+/* quantitat preu */
 .precio-cantidad {
     font-family: "Instrument Serif", serif;
     margin-top: 10px;
     font-weight: 600;
     font-size: 1.1rem;
 }
-/* ---- CAROUSEL SOLEA ---- */
-/* ---- CAROUSEL SOLEA ---- */
+
+/* ===================== */
+/* SECCIÓ VALORS / PILARS*/
+/* ===================== */
+.values-section {
+    max-width: 1100px;
+    margin: 3rem auto;
+    text-align: center;
+    padding: 0 24px;
+}
+
+.values-section h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.values-grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.value-card {
+    padding: 1.5rem;
+    border-radius: 16px;
+    background-color: #ffffff;
+    border: 1px solid rgba(82, 121, 142, 0.12);
+    text-align: left;
+}
+
+.value-card h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: "Instrument Serif", serif;
+    color: var(--solea-blue);
+    font-size: 1.3rem;
+}
+
+.value-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* ===================== */
+/* CAROUSEL SOLEA        */
+/* ===================== */
 .carousel-wrapper {
-    max-width: 650px;       /* ancho máximo del “cuadro” */
+    max-width: 650px;       /* ample màxim del “quadre” */
     width: 100%;
     border-radius: 24px;
-    overflow: hidden;       /* recorta bordes redondeados */
+    overflow: hidden;       /* recorta vores arrodonides */
     box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
 }
 
-/* altura controlada + mismas proporciones */
+/* altura controlada + proporcions */
 .carousel-wrapper .carousel img {
-    height: 650px;          /* controla la altura del carrusel */
-    width: 100%;            /* ocupa todo el wrapper */
-    object-fit: cover;      /* recorta elegante sin deformar */
-    object-position: 50% 25%; /* ajusta qué parte se ve */
+    height: 650px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 25%;
 }
 
-
-/* secció clients satisfets */
+/* ============================ */
+/* STATS / CLIENTS SATISFETS   */
+/* ============================ */
 .stats-section {
     background-color: var(--solea-bg);
 }
@@ -214,12 +309,10 @@ h1 {
     margin: 0 auto;
 }
 
-/* cada element */
 .stat-item {
     font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* número gran */
 .stat-number {
     margin: 0 0 6px;
     font-weight: 700;
@@ -227,15 +320,16 @@ h1 {
     color: #555555;
 }
 
-/* text de sota */
 .stat-label {
     margin: 0;
     font-weight: 600;
     font-size: 1rem;
     color: #555555;
 }
-/* --- ALBUM SERVEIS (tipus Bootstrap) --- */
 
+/* ========================= */
+/* ALBUM SERVEIS / CARDS    */
+/* ========================= */
 .album-section {
     background-color: var(--solea-bg);
 }
@@ -248,7 +342,7 @@ h1 {
     font-size: 0.95rem;
 }
 
-/* columna del grid */
+/* targeta Bootstrap */
 .album-card .card {
     border-radius: 22px;
     border: none;
@@ -256,7 +350,6 @@ h1 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* hover targeta */
 .album-card .card:hover {
     transform: translateY(-12px);
     box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
@@ -299,9 +392,25 @@ h1 {
     transform: translateY(-1px);
 }
 
-/* secció ressenyes */
+/* ========================= */
+/* SECCIÓ RESSENYES         */
+/* ========================= */
 .reviews-section {
     background-color: var(--solea-bg);
+    padding: 80px 120px;
+    text-align: center;
+    margin-bottom: 120px; /* evitar solapament amb footer */
+}
+
+.reviews-section h2 {
+    margin-bottom: 50px;
+}
+
+/* grid ressenyes */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
 }
 
 /* targeta ressenya */
@@ -356,9 +465,16 @@ h1 {
     opacity: 0.85;
 }
 
-/* peu footer */
+/* ========================= */
+/* FOOTER SOLEA             */
+/* ========================= */
 .site-footer {
     background-color: var(--solea-bg);
+    padding: 40px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0,0,0,0.02);
 }
 
 /* marca footer */
@@ -401,7 +517,7 @@ h1 {
     gap: 24px;
 }
 
-/* socials enllac */
+/* socials enllaç */
 .social-list a {
     display: inline-block;
     transition: transform 0.2s ease, opacity 0.2s ease;
@@ -422,8 +538,106 @@ h1 {
     opacity: 1;
     transform: translateY(-2px);
 }
+/* ========================= */
+/*   FORMULARI SOLEA        */
+/* ========================= */
 
-/* responsiu bàsic */
+.solea-form-section {
+    background-color: var(--solea-bg);
+    padding: 80px 0;
+}
+
+/* Card / contenidor del formulari (si tens un .card, .container, etc.) */
+.solea-form-section .card {
+    border-radius: 28px;
+    border: none;
+    background-color: #ffffff;
+    padding: 40px 32px;
+}
+
+/* Títol i subtítol dins el formulari */
+.solea-form-section h2 {
+    font-family: "Instrument Serif", serif;
+    color: var(--solea-blue);
+    font-size: 2.2rem;
+}
+
+.solea-form-section .solea-form-subtitle,
+.solea-form-section p.form-subtitle {
+    font-size: 0.95rem;
+    color: rgba(0,0,0,0.6);
+}
+
+/* Labels */
+.solea-form-section .form-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #3b4a4f;
+}
+
+/* Inputs + selects més rodons i estil Solea */
+.solea-form-section .form-control,
+.solea-form-section .form-select {
+    border-radius: 999px;
+    border: 1px solid rgba(82, 121, 142, 0.25);
+    padding: 0.65rem 1.1rem;
+    font-size: 0.95rem;
+    background-color: #ffffff;
+}
+
+/* Textarea: una mica menys pill, més bloc */
+.solea-form-section textarea.form-control {
+    border-radius: 20px;
+    min-height: 140px;
+    resize: vertical;
+}
+
+/* Focus state */
+.solea-form-section .form-control:focus,
+.solea-form-section .form-select:focus {
+    border-color: var(--solea-blue);
+    box-shadow: 0 0 0 0.15rem rgba(82,121,142,0.20);
+}
+
+/* Botó principal – funciona si usas .btn-primary o .solea-btn-primary */
+.solea-form-section .btn-primary,
+.solea-form-section .solea-btn-primary {
+    border-radius: 999px;
+    background-color: var(--solea-blue);
+    color: #ffffff;
+    border: none;
+    padding: 0.85rem 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.solea-form-section .btn-primary:hover,
+.solea-form-section .solea-btn-primary:hover {
+    background-color: #3f5c6d;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.16);
+}
+
+/* Peu del formulari */
+.solea-form-section .solea-form-footnote {
+    font-size: 0.8rem;
+    color: rgba(0,0,0,0.55);
+}
+
+/* Responsiu */
+@media (max-width: 768px) {
+    .solea-form-section .card {
+        padding: 28px 20px;
+        border-radius: 22px;
+    }
+}
+
+/* ========================= */
+/* RESPONSIVITAT BÀSICA     */
+/* ========================= */
 @media (max-width: 992px) {
     .logo-img {
         height: 150px;
@@ -439,5 +653,24 @@ h1 {
 
     .section-title {
         font-size: 2.4rem;
+    }
+
+    .intro-section,
+    .who-section,
+    .reviews-section {
+        padding: 60px 24px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .site-footer {
+        flex-direction: column;
+        gap: 24px;
+        padding: 32px 24px;
+        text-align: center;
     }
 }
