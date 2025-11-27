@@ -16,19 +16,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <!-- capcalera principal -->
     <header class="site-header">
-        <div class="header-inner">
+        <section class="header-inner">
             <!-- logo principal -->
-            <div class="logo-area">
+            <section class="logo-area">
                 <a href="index.html" class="logo-link">
                     <img src="img/Solea_logo_notext.png" alt="Solea - Catering, Coffee & Cocktails" class="logo-img">
                 </a>
                 <p class="logo-tagline">
                     CATERING, COFFEE & COCKTAILS<br>
-                    <span>Miami Platja</span>
+                    <strong>Miami Platja</strong>
                 </p>
-            </div>
+            </section>
 
             <!-- menu navegacio -->
             <nav class="main-nav" aria-label="Navegació principal">
@@ -40,81 +41,85 @@
                     <li><a href="contacte.html">Contacte</a></li>
                 </ul>
             </nav>
-        </div>
+        </section>
     </header>
+
+    <!-- Formulari -->
     <section class="solea-form-section">
-        <div class="container">
-            <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="card solea-form-card shadow-lg">
-                <h2 class="mb-3 text-center">Contacta amb Solea</h2>
-                <p class="mb-4 text-center solea-form-subtitle">
-                    Explica’ns el teu esdeveniment i et respondrem amb una proposta feta a mida.
-                </p>
+        <section class="container">
+            <section class="row justify-content-center">
+                <section class="col-lg-8">
+                    <article class="card solea-form-card shadow-lg">
 
-                <form>
-                    <div class="row g-3">
-                    <div class="col-md-6">
-                        <label for="nom" class="form-label">Nom complet</label>
-                        <input type="text" class="form-control" id="nom" placeholder="Nom i cognoms">
-                    </div>
-
-                    <div class="col-md-6">
-                        <label for="email" class="form-label">Correu electrònic</label>
-                        <input type="email" class="form-control" id="email" placeholder="exemple@correu.com">
-                    </div>
-
-                    <div class="col-md-6">
-                        <label for="telefon" class="form-label">Telèfon</label>
-                        <input type="tel" class="form-control" id="telefon" placeholder="+34 600 000 000">
-                    </div>
-
-                    <div class="col-md-6">
-                        <label for="tipus-event" class="form-label">Tipus d’esdeveniment</label>
-                        <select id="tipus-event" class="form-select">
-                        <option selected>Tria una opció</option>
-                        <option>Càtering de menjar</option>
-                        <option>Cocteleria</option>
-                        <option>Maridatge de Vins</option>
-                        <option>Tast de cafè d’especialitat</option>
-                        <option>Esdeveniment personalitzat</option>
-                        </select>
-                    </div>
-
-                    <div class="col-12">
-                        <label for="data" class="form-label">Data aproximada</label>
-                        <input type="date" class="form-control" id="data">
-                    </div>
-
-                    <div class="col-12">
-                        <label for="missatge" class="form-label">Explica’ns què tens en ment</label>
-                        <textarea id="missatge" class="form-control" rows="4"
-                        placeholder="Número de convidats, estil de menjar, lloc, horari..."></textarea>
-                    </div>
-
-                    <div class="col-12">
-                        <button type="submit" class="btn solea-btn-primary w-100">
-                        Enviar sol·licitud
-                        </button>
-                    </div>
-
-                    <div class="col-12 text-center">
-                        <p class="solea-form-footnote mb-0">
-                        Respondrem el més aviat possible. Tractem cada proposta com si fos el nostre propi esdeveniment.
+                        <h2 class="mb-3 text-center">Contacta amb Solea</h2>
+                        <p class="mb-4 text-center solea-form-subtitle">
+                            Explica’ns el teu esdeveniment i et respondrem amb una proposta feta a mida.
                         </p>
-                    </div>
-                    </div>
-                </form>
 
-                </div>
-            </div>
-            </div>
-        </div>
+                        <form>
+                            <section class="row g-3">
+
+                                <section class="col-md-6">
+                                    <label for="nom" class="form-label">Nom complet</label>
+                                    <input type="text" class="form-control" id="nom" placeholder="Nom i cognoms">
+                                </section>
+
+                                <section class="col-md-6">
+                                    <label for="email" class="form-label">Correu electrònic</label>
+                                    <input type="email" class="form-control" id="email" placeholder="exemple@correu.com">
+                                </section>
+
+                                <section class="col-md-6">
+                                    <label for="telefon" class="form-label">Telèfon</label>
+                                    <input type="tel" class="form-control" id="telefon" placeholder="+34 600 000 000">
+                                </section>
+
+                                <section class="col-md-6">
+                                    <label for="tipus-event" class="form-label">Tipus d’esdeveniment</label>
+                                    <select id="tipus-event" class="form-select">
+                                        <option selected>Tria una opció</option>
+                                        <option>Càtering de menjar</option>
+                                        <option>Cocteleria</option>
+                                        <option>Maridatge de Vins</option>
+                                        <option>Tast de cafè d’especialitat</option>
+                                        <option>Esdeveniment personalitzat</option>
+                                    </select>
+                                </section>
+
+                                <section class="col-12">
+                                    <label for="data" class="form-label">Data aproximada</label>
+                                    <input type="date" class="form-control" id="data">
+                                </section>
+
+                                <section class="col-12">
+                                    <label for="missatge" class="form-label">Explica’ns què tens en ment</label>
+                                    <textarea id="missatge" class="form-control" rows="4"
+                                        placeholder="Número de convidats, estil de menjar, lloc, horari..."></textarea>
+                                </section>
+
+                                <section class="col-12">
+                                    <button type="submit" class="btn solea-btn-primary w-100">Enviar sol·licitud</button>
+                                </section>
+
+                                <section class="col-12 text-center">
+                                    <p class="solea-form-footnote mb-0">
+                                        Respondrem el més aviat possible. Tractem cada proposta com si fos el nostre propi esdeveniment.
+                                    </p>
+                                </section>
+
+                            </section>
+                        </form>
+
+                    </article>
+                </section>
+            </section>
+        </section>
     </section>
 
     <!-- peu pagina -->
     <footer class="site-footer border-top py-4">
-        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-4">
+        <section class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-4">
+            
             <!-- marca footer -->
             <section class="footer-brand">
                 <a href="index.html" class="footer-logo-link">
@@ -122,7 +127,7 @@
                 </a>
                 <p class="footer-tagline">
                     CATERING, COFFEE & COCKTAILS<br>
-                    <span>MIAMI PLATJA</span>
+                    <strong>MIAMI PLATJA</strong>
                 </p>
             </section>
 
@@ -146,7 +151,8 @@
                     </li>
                 </ul>
             </section>
-        </div>
+
+        </section>
     </footer>
 
     <!-- Bootstrap JS  -->
