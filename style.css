@@ -203,7 +203,7 @@ h1 {
 }
 
 .who-we-are p {
-    max-width: 580px;
+    max-width: 550px;
 }
 
 /* ===================== */
@@ -626,6 +626,52 @@ h1 {
     font-size: 0.8rem;
     color: rgba(0,0,0,0.55);
 }
+/* ========================= */
+/*  BANNER COOKIES - SOLEA   */
+/* ========================= */
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px 0;
+    background-color: var(--solea-bg); /* #FDF9F4 */
+    border-top: 1px solid rgba(0,0,0,0.15);
+    z-index: 9999;
+}
+
+.cookie-text {
+    color: var(--solea-text); /* #3B4A4F */
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.cookie-link {
+    color: var(--solea-blue); /* #52798E */
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+/* Botón Aceptar */
+.solea-btn-accept {
+    background-color: var(--solea-blue); /* azul solea */
+    color: #fff;
+    border-radius: 8px;
+    padding: 4px 12px;
+    border: none;
+}
+
+/* Botón Rechazar */
+.solea-btn-reject {
+    background-color: transparent;
+    border: 1px solid var(--solea-blue);
+    color: var(--solea-blue);
+    border-radius: 8px;
+    padding: 4px 12px;
+}
+
+
 
 /* Responsiu */
 @media (max-width: 768px) {

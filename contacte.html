@@ -97,11 +97,23 @@
                                         placeholder="Número de convidats, estil de menjar, lloc, horari..."></textarea>
                                 </section>
 
+                                <section>
+                                    <label for="rgpd">Accepto la política de privacitat</label>
+                                    <input type="checkbox" id="rgpd" required>
+                                </section>
+
                                 <section class="col-12">
                                     <button type="submit" class="btn solea-btn-primary w-100">Enviar sol·licitud</button>
                                 </section>
 
                                 <section class="col-12 text-center">
+                                    <p class="solea-form-footnote mb-0">
+                                        Responsable: SOLEA
+                                        Finalitat: donar resposta a la teva consulta.
+                                        Legitimació: el teu consentiment.
+                                        Destinataris: no es cediran dades a tercers.
+                                        Drets: pots accedir, rectificar i suprimir les teves dades a [solea@gmail.com].
+                                    </p>
                                     <p class="solea-form-footnote mb-0">
                                         Respondrem el més aviat possible. Tractem cada proposta com si fos el nostre propi esdeveniment.
                                     </p>
@@ -133,6 +145,8 @@
 
             <!-- socials footer -->
             <section class="footer-social">
+                <p>© 2025 SOLEA. Tots els drets reservats</p>
+                <p>Avis Legal</p>
                 <ul class="social-list">
                     <li>
                         <a href="#" aria-label="Facebook">
@@ -154,6 +168,21 @@
 
         </section>
     </footer>
+    <!-- Banner Cookies -->
+    <section class="cookie-banner" role="dialog" aria-live="polite">
+        <div class="container d-flex flex-column flex-md-row align-items-start justify-content-between gap-3">
+
+            <p class="m-0 cookie-text">
+                Utilitzem galetes per millorar la teva experiència de navegació            <a href="cookies.html" class="cookie-link">Más información</a>.
+            </p>
+
+            <div class="d-flex gap-2">
+                <a href="#" class="btn solea-btn-accept btn-sm">Acceptar</a>
+                <a href="#" class="btn solea-btn-reject btn-sm">Rebutjar</a>
+            </div>
+
+        </div>
+    </section>
 
     <!-- Bootstrap JS  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
