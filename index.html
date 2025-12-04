@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solea - Catering, Coffee & Cocktails</title>
+
     <!-- icona navegador -->
     <link rel="icon" href="img/Solea_logo_notext.png" type="image/png">
+
     <!-- tipografies elegants -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
     <!-- full estils -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- capcalera principal -->
+    <!-- capçalera principal -->
     <header class="site-header">
-        <section class="header-inner">
+        <div class="header-inner">
             <!-- logo principal -->
-            <section class="logo-area">
+            <div class="logo-area">
                 <a href="index.html" class="logo-link">
                     <img src="img/Solea_logo_notext.png" alt="Solea - Catering, Coffee & Cocktails" class="logo-img">
                 </a>
@@ -29,9 +32,9 @@
                     CATERING, COFFEE & COCKTAILS<br>
                     <strong>Miami Platja</strong>
                 </p>
-            </section>
+            </div>
 
-            <!-- menu navegacio -->
+            <!-- menú navegació -->
             <nav class="main-nav" aria-label="Navegació principal">
                 <ul>
                     <li><a href="index.html">Inici</a></li>
@@ -41,19 +44,22 @@
                     <li><a href="contacte.html">Contacte</a></li>
                 </ul>
             </nav>
-        </section>
+        </div>
     </header>
 
     <!-- contingut principal -->
     <main>
-        <!-- seccio introduccio -->
-        <section class="intro-section py-5">
-            <section class="container">
-                <section class="row align-items-center gy-4">
+        <!-- secció introducció -->
+        <section class="intro-section py-5" aria-labelledby="intro-title">
+            <div class="container">
+                <h2 id="intro-title" class="section-title">
+                    Premium Catering, Coffee & Cocktails
+                </h2>
+
+                <div class="row align-items-center gy-4">
                     <!-- text introductori -->
-                    <section class="col-lg-6">
-                        <article class="intro-text">
-                            <h1>Premium Catering, Coffee & Cocktails</h1>
+                    <div class="col-lg-6">
+                        <div class="intro-text">
                             <p>
                                 Solea és el teu refugi mediterrani amb ànima pròpia: un espai que respira calma de dia i carisma de nit. 
                                 Al matí és un cafè elegant, lluminós i minimalista, on el bon cafè, la rebosteria artesana i els esmorzars
@@ -72,35 +78,39 @@
                                 un espai pensat per generar comunitat. Un lloc on la gent ve a gaudir… i torna perquè s’hi sent part 
                                 d’alguna cosa especial.
                             </p>
-                        </article>
-                    </section>
+                        </div>
+                    </div>
 
-                    <!-- imatge introductoria -->
-                    <section class="col-lg-6 text-center text-lg-end">
+                    <!-- imatge introductòria -->
+                    <div class="col-lg-6 text-center text-lg-end">
                         <figure class="intro-image m-0">
                             <img src="img/Solea_Fondo.png" alt="Espai Solea" class="img-fluid intro-image-img">
                         </figure>
-                    </section>
-                </section>
-            </section>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- seccio qui -->
-        <section class="who-section py-5">
-            <section class="container">
-                <section class="row align-items-center gy-4">
+        <!-- secció qui som -->
+        <section class="who-section py-5" aria-labelledby="who-title">
+            <div class="container">
+                <h2 id="who-title" class="section-title">
+                    Qui Som?
+                </h2>
+
+                <div class="row align-items-center gy-4">
                     <!-- imatge qui -->
-                    <section class="col-lg-6 text-center text-lg-start">
+                    <div class="col-lg-6 text-center text-lg-start">
                         <figure class="who-image m-0">
                             <img src="img/Solea_Fondo1.png" alt="Cocteleria Solea" class="img-fluid intro-image-img">
                         </figure>
-                    </section>
+                    </div>
 
-                    <!-- text qui -->
-                    <section class="col-lg-6">
-                        <article class="who-we-are">
-                            <h2>Qui Som?</h2>
-                            <p>Solea és un concepte nascut amb ambició, estil i una idea molt clara: portar una experiència Mediterrània 
+                    <!-- text qui som -->
+                    <div class="col-lg-6">
+                        <div class="who-we-are">
+                            <p>
+                                Solea és un concepte nascut amb ambició, estil i una idea molt clara: portar una experiència Mediterrània 
                                 moderna a tots aquells que valoren la qualitat, el detall i l’elegància sense artificis. Darrere del projecte
                                 hi ha una parella jove de 18 anys que, el 2024, van decidir transformar el seu talent i la seva visió en 
                                 una marca real. Avui, Solea creix a un ritme imparable, consolidant-se com un referent emergent en gastronomia
@@ -121,94 +131,93 @@
                                 i detalls que sedueixen. Si busques elevar els teus esdeveniments o simplement gaudir d’un espai amb personalitat i elegància Mediterrània, Solea és la resposta.
                                 Un projecte jove, amb ànima… i amb un futur que només fa que començar.
                             </p>
-                        </article>
-                    </section>
-                </section>
-            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- secció ressenyes -->
-        <section class="reviews-section" aria-labelledby="reviews-title">
+        <section class="reviews-section py-5" aria-labelledby="reviews-title">
             <h2 id="reviews-title" class="section-title text-center mb-4">Ressenyes</h2>
 
-            <section class="reviews-grid">
+            <div class="reviews-grid">
 
-                <article class="review-card">
+                <div class="review-card">
                     <blockquote>“Un lloc fantàstic i superbònic”</blockquote>
                     <footer>
-                        <section class="review-user">
-                            <img src="img/Client1.png" alt="Foto usuari Jose">
+                        <div class="review-user">
+                            <img src="img/Client1.png" alt="Foto usuària Laura">
                             <strong>Laura</strong>
-                        </section>
-                        <img src="img/google_reviews.png" alt="Google Reviews" class="review-stars">
+                        </div>
+                        <img src="img/google_reviews.png" alt="Valoració Google Reviews" class="review-stars">
                     </footer>
-                </article>
+                </div>
 
-                <article class="review-card">
+                <div class="review-card">
                     <blockquote>“El millor cafè de la zona”</blockquote>
                     <footer>
-                        <section class="review-user">
-                            <img src="img/Client2.png" alt="Foto usuària Laura">
+                        <div class="review-user">
+                            <img src="img/Client2.png" alt="Foto usuari Jose">
                             <strong>Jose</strong>
-                        </section>
-                        <img src="img/google_reviews.png" alt="Google Reviews" class="review-stars">
+                        </div>
+                        <img src="img/google_reviews.png" alt="Valoració Google Reviews" class="review-stars">
                     </footer>
-                </article>
+                </div>
 
-                <article class="review-card">
+                <div class="review-card">
                     <blockquote>“Un menjar boníssim”</blockquote>
                     <footer>
-                        <section class="review-user">
+                        <div class="review-user">
                             <img src="img/Client3.png" alt="Foto usuari Marc">
                             <strong>Marc</strong>
-                        </section>
-                        <img src="img/google_reviews.png" alt="Google Reviews" class="review-stars">
+                        </div>
+                        <img src="img/google_reviews.png" alt="Valoració Google Reviews" class="review-stars">
                     </footer>
-                </article>
+                </div>
 
-                <article class="review-card">
+                <div class="review-card">
                     <blockquote>“Ambient preciós i menjar molt cuidat. Tornaré a contractar-los.”</blockquote>
                     <footer>
-                        <section class="review-user">
+                        <div class="review-user">
                             <img src="img/Client4.png" alt="Foto usuari Aleix">
                             <strong>Aleix</strong>
-                        </section>
-                        <img src="img/google_reviews.png" alt="Google Reviews" class="review-stars">
+                        </div>
+                        <img src="img/google_reviews.png" alt="Valoració Google Reviews" class="review-stars">
                     </footer>
-                </article>
+                </div>
 
-                <article class="review-card">
+                <div class="review-card">
                     <blockquote>“Els còctels són finíssims i molt ben equilibrats.”</blockquote>
                     <footer>
-                        <section class="review-user">
-                            <img src="img/Client5.png" alt="Foto usuari Iker">
+                        <div class="review-user">
+                            <img src="img/Client5.png" alt="Foto usuària Paula">
                             <strong>Paula</strong>
-                        </section>
-                        <img src="img/google_reviews.png" alt="Google Reviews" class="review-stars">
+                        </div>
+                        <img src="img/google_reviews.png" alt="Valoració Google Reviews" class="review-stars">
                     </footer>
-                </article>
+                </div>
 
-                <article class="review-card">
+                <div class="review-card">
                     <blockquote>“Una fusió mediterrània molt ben executada.”</blockquote>
                     <footer>
-                        <section class="review-user">
-                            <img src="img/Client6.png" alt="Foto usuària Paula">
+                        <div class="review-user">
+                            <img src="img/Client6.png" alt="Foto usuària Clara">
                             <strong>Clara</strong>
-                        </section>
-                        <img src="img/google_reviews.png" alt="Google Reviews" class="review-stars">
+                        </div>
+                        <img src="img/google_reviews.png" alt="Valoració Google Reviews" class="review-stars">
                     </footer>
-                </article>
+                </div>
 
-            </section>
+            </div>
         </section>
-
     </main>
 
-    <!-- peu pagina -->
+    <!-- peu pàgina -->
     <footer class="site-footer">
 
         <!-- marca footer -->
-        <section class="footer-brand">
+        <div class="footer-brand">
             <a href="index.html" class="footer-logo-link">
                 <img src="img/Solea_logo_notext.png" alt="Solea - Catering, Coffee & Cocktails" class="footer-logo-img">
             </a>
@@ -216,14 +225,14 @@
                 CATERING, COFFEE & COCKTAILS<br>
                 <strong>MIAMI PLATJA</strong>
             </p>
-        </section>
+        </div>
 
         <!-- socials footer -->
-        <section class="footer-social">
-            <article>
-                <p>© 2025 SOLEA. Tots els drets reservats</p>
-                <p>Avis Legal</p>
-            </article>
+        <div class="footer-social">
+            <div>
+                <p>© 2025 SOLEA. Tots els drets reservats.</p>
+                <p><a href="avis-legal.html">Avís legal</a></p>
+            </div>
             <ul class="social-list">
                 <li>
                     <a href="#" aria-label="Facebook">
@@ -236,20 +245,22 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" aria-label="Tik Tok">
-                        <img src="img/TikTok_logo_fosc.png" alt="Tik Tok">
+                    <a href="#" aria-label="TikTok">
+                        <img src="img/TikTok_logo_fosc.png" alt="TikTok">
                     </a>
                 </li>
             </ul>
-        </section>
+        </div>
 
     </footer>
+
     <!-- Banner Cookies -->
-    <section class="cookie-banner" role="dialog" aria-live="polite">
+    <div class="cookie-banner" role="dialog" aria-live="polite" aria-label="Avís d'ús de galetes">
         <div class="container d-flex flex-column flex-md-row align-items-start justify-content-between gap-3">
 
             <p class="m-0 cookie-text">
-                Utilitzem galetes per millorar la teva experiència de navegació            <a href="cookies.html" class="cookie-link">Más información</a>.
+                Utilitzem galetes per millorar la teva experiència de navegació.
+                <a href="cookies.html" class="cookie-link">Més informació</a>.
             </p>
 
             <div class="d-flex gap-2">
@@ -258,8 +269,7 @@
             </div>
 
         </div>
-    </section>
-
+    </div>
 
 </body>
 </html>
