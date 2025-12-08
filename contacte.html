@@ -19,9 +19,9 @@
 
     <!-- capcalera principal -->
     <header class="site-header">
-        <section class="header-inner">
+        <div class="header-inner">
             <!-- logo principal -->
-            <section class="logo-area">
+            <div class="logo-area">
                 <a href="index.html" class="logo-link">
                     <img src="img/Solea_logo_notext.png" alt="Solea - Catering, Coffee & Cocktails" class="logo-img">
                 </a>
@@ -29,7 +29,7 @@
                     CATERING, COFFEE & COCKTAILS<br>
                     <strong>Miami Platja</strong>
                 </p>
-            </section>
+            </div>
 
             <!-- menu navegacio -->
             <nav class="main-nav" aria-label="Navegació principal">
@@ -41,40 +41,42 @@
                     <li><a href="contacte.html">Contacte</a></li>
                 </ul>
             </nav>
-        </section>
+        </div>
     </header>
 
-    <!-- Formulari -->
-    <section class="solea-form-section">
-        <section class="container">
-            <section class="row justify-content-center">
-                <section class="col-lg-8">
+    <!-- contingut principal: formulari de contacte -->
+    <main class="solea-form-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
                     <article class="card solea-form-card shadow-lg">
 
-                        <h2 class="mb-3 text-center">Contacta amb Solea</h2>
-                        <p class="mb-4 text-center solea-form-subtitle">
-                            Explica’ns el teu esdeveniment i et respondrem amb una proposta feta a mida.
-                        </p>
+                        <header class="mb-4 text-center">
+                            <h1 class="mb-3">Contacta amb Solea</h1>
+                            <p class="solea-form-subtitle mb-0">
+                                Explica’ns el teu esdeveniment i et respondrem amb una proposta feta a mida.
+                            </p>
+                        </header>
 
                         <form>
-                            <section class="row g-3">
+                            <div class="row g-3">
 
-                                <section class="col-md-6">
+                                <div class="col-md-6">
                                     <label for="nom" class="form-label">Nom complet</label>
                                     <input type="text" class="form-control" id="nom" placeholder="Nom i cognoms">
-                                </section>
+                                </div>
 
-                                <section class="col-md-6">
+                                <div class="col-md-6">
                                     <label for="email" class="form-label">Correu electrònic</label>
                                     <input type="email" class="form-control" id="email" placeholder="exemple@correu.com">
-                                </section>
+                                </div>
 
-                                <section class="col-md-6">
+                                <div class="col-md-6">
                                     <label for="telefon" class="form-label">Telèfon</label>
                                     <input type="tel" class="form-control" id="telefon" placeholder="+34 600 000 000">
-                                </section>
+                                </div>
 
-                                <section class="col-md-6">
+                                <div class="col-md-6">
                                     <label for="tipus-event" class="form-label">Tipus d’esdeveniment</label>
                                     <select id="tipus-event" class="form-select">
                                         <option selected>Tria una opció</option>
@@ -84,29 +86,29 @@
                                         <option>Tast de cafè d’especialitat</option>
                                         <option>Esdeveniment personalitzat</option>
                                     </select>
-                                </section>
+                                </div>
 
-                                <section class="col-12">
+                                <div class="col-12">
                                     <label for="data" class="form-label">Data aproximada</label>
                                     <input type="date" class="form-control" id="data">
-                                </section>
+                                </div>
 
-                                <section class="col-12">
+                                <div class="col-12">
                                     <label for="missatge" class="form-label">Explica’ns què tens en ment</label>
                                     <textarea id="missatge" class="form-control" rows="4"
                                         placeholder="Número de convidats, estil de menjar, lloc, horari..."></textarea>
-                                </section>
+                                </div>
 
-                                <section>
+                                <div class="col-12">
                                     <label for="rgpd">Accepto la política de privacitat</label>
                                     <input type="checkbox" id="rgpd" required>
-                                </section>
+                                </div>
 
-                                <section class="col-12">
+                                <div class="col-12">
                                     <button type="submit" class="btn solea-btn-primary w-100">Enviar sol·licitud</button>
-                                </section>
+                                </div>
 
-                                <section class="col-12 text-center">
+                                <div class="col-12 text-center">
                                     <p class="solea-form-footnote mb-0">
                                         Responsable: SOLEA
                                         Finalitat: donar resposta a la teva consulta.
@@ -117,23 +119,23 @@
                                     <p class="solea-form-footnote mb-0">
                                         Respondrem el més aviat possible. Tractem cada proposta com si fos el nostre propi esdeveniment.
                                     </p>
-                                </section>
+                                </div>
 
-                            </section>
+                            </div>
                         </form>
 
                     </article>
-                </section>
-            </section>
-        </section>
-    </section>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!-- peu pagina -->
     <footer class="site-footer border-top py-4">
-        <section class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-4">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-4">
             
             <!-- marca footer -->
-            <section class="footer-brand">
+            <div class="footer-brand">
                 <a href="index.html" class="footer-logo-link">
                     <img src="img/Solea_logo_notext.png" alt="Solea - Catering, Coffee & Cocktails" class="footer-logo-img">
                 </a>
@@ -141,13 +143,13 @@
                     CATERING, COFFEE & COCKTAILS<br>
                     <strong>MIAMI PLATJA</strong>
                 </p>
-            </section>
+            </div>
 
             <!-- socials footer -->
-            <section class="footer-social">
+            <div class="footer-social">
                 <div>
                     <p>© 2025 SOLEA. Tots els drets reservats.</p>
-                    <p><a href="politica.html">Avís legal</a></p>
+                    <p><a href="politica.html">Política de privadesa</a></p>
                 </div>
                 <ul class="social-list">
                     <li>
@@ -166,16 +168,18 @@
                         </a>
                     </li>
                 </ul>
-            </section>
+            </div>
 
-        </section>
+        </div>
     </footer>
+
     <!-- Banner Cookies -->
-    <section class="cookie-banner" role="dialog" aria-live="polite">
+    <div class="cookie-banner" role="dialog" aria-live="polite">
         <div class="container d-flex flex-column flex-md-row align-items-start justify-content-between gap-3">
 
             <p class="m-0 cookie-text">
-                Utilitzem galetes per millorar la teva experiència de navegació            <a href="cookies.html" class="cookie-link">Más información</a>.
+                Utilitzem galetes per millorar la teva experiència de navegació
+                <a href="cookies.html" class="cookie-link">Más información</a>.
             </p>
 
             <div class="d-flex gap-2">
@@ -184,10 +188,39 @@
             </div>
 
         </div>
-    </section>
+    </div>
 
     <!-- Bootstrap JS  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script cookies -->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const banner = document.querySelector(".cookie-banner");
+        const btnAccept = document.querySelector(".solea-btn-accept");
+        const btnReject = document.querySelector(".solea-btn-reject");
+
+        // 1. Comprobar si el usuario ya tomó una decisión
+        const cookieDecision = localStorage.getItem("cookieDecision");
+
+        if (cookieDecision === "accepted" || cookieDecision === "rejected") {
+            banner.style.display = "none";
+        }
+
+        // 2. Aceptar cookies
+        btnAccept.addEventListener("click", (e) => {
+            e.preventDefault();
+            localStorage.setItem("cookieDecision", "accepted");
+            banner.style.display = "none";
+        });
+
+        // 3. Rechazar cookies
+        btnReject.addEventListener("click", (e) => {
+            e.preventDefault();
+            localStorage.setItem("cookieDecision", "rejected");
+            banner.style.display = "none";
+        });
+    });
+    </script>
 
 </body>
 </html>

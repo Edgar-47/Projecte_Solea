@@ -143,71 +143,77 @@
 
             <div class="reviews-grid">
 
-                <div class="review-card">
+                <article class="review-card">
+                    <h3 class="visually-hidden">Ressenya de Laura</h3>
                     <blockquote>“Un lloc fantàstic i superbònic”</blockquote>
                     <footer>
-                        <div class="review-user">
+                        <address class="review-user">
                             <img src="img/Client1.png" alt="Foto usuària Laura">
                             <strong>Laura</strong>
-                        </div>
+                        </address>
                         <img src="img/google_reviews.png" alt="Valoració Google Reviews" class="review-stars">
                     </footer>
-                </div>
+                </article>
 
-                <div class="review-card">
+                <article class="review-card">
+                    <h3 class="visually-hidden">Ressenya de Jose</h3>
                     <blockquote>“El millor cafè de la zona”</blockquote>
                     <footer>
-                        <div class="review-user">
+                        <address class="review-user">
                             <img src="img/Client2.png" alt="Foto usuari Jose">
                             <strong>Jose</strong>
-                        </div>
+                        </address>
                         <img src="img/google_reviews.png" alt="Valoració Google Reviews" class="review-stars">
                     </footer>
-                </div>
+                </article>
 
-                <div class="review-card">
+                <article class="review-card">
+                    <h3 class="visually-hidden">Ressenya de Marc</h3>
                     <blockquote>“Un menjar boníssim”</blockquote>
                     <footer>
-                        <div class="review-user">
+                        <address class="review-user">
                             <img src="img/Client3.png" alt="Foto usuari Marc">
                             <strong>Marc</strong>
-                        </div>
+                        </address>
                         <img src="img/google_reviews.png" alt="Valoració Google Reviews" class="review-stars">
                     </footer>
-                </div>
+                </article>
 
-                <div class="review-card">
+                <article class="review-card">
+                    <h3 class="visually-hidden">Ressenya d'Aleix</h3>
                     <blockquote>“Ambient preciós i menjar molt cuidat. Tornaré a contractar-los.”</blockquote>
                     <footer>
-                        <div class="review-user">
+                        <address class="review-user">
                             <img src="img/Client4.png" alt="Foto usuari Aleix">
                             <strong>Aleix</strong>
-                        </div>
+                        </address>
                         <img src="img/google_reviews.png" alt="Valoració Google Reviews" class="review-stars">
                     </footer>
-                </div>
+                </article>
 
-                <div class="review-card">
+                <article class="review-card">
+                    <h3 class="visually-hidden">Ressenya de Paula</h3>
                     <blockquote>“Els còctels són finíssims i molt ben equilibrats.”</blockquote>
                     <footer>
-                        <div class="review-user">
+                        <address class="review-user">
                             <img src="img/Client5.png" alt="Foto usuària Paula">
                             <strong>Paula</strong>
-                        </div>
+                        </address>
                         <img src="img/google_reviews.png" alt="Valoració Google Reviews" class="review-stars">
                     </footer>
-                </div>
+                </article>
 
-                <div class="review-card">
+                <article class="review-card">
+                    <h3 class="visually-hidden">Ressenya de Clara</h3>
                     <blockquote>“Una fusió mediterrània molt ben executada.”</blockquote>
                     <footer>
-                        <div class="review-user">
+                        <address class="review-user">
                             <img src="img/Client6.png" alt="Foto usuària Clara">
                             <strong>Clara</strong>
-                        </div>
+                        </address>
                         <img src="img/google_reviews.png" alt="Valoració Google Reviews" class="review-stars">
                     </footer>
-                </div>
+                </article>
 
             </div>
         </section>
@@ -231,7 +237,7 @@
         <div class="footer-social">
             <div>
                 <p>© 2025 SOLEA. Tots els drets reservats.</p>
-                <p><a href="politica.html">Avís legal</a></p>
+                <p><a href="politica.html">Política de privadesa</a></p>
             </div>
             <ul class="social-list">
                 <li>
@@ -255,7 +261,7 @@
     </footer>
 
     <!-- Banner Cookies -->
-    <div class="cookie-banner" role="dialog" aria-live="polite" aria-label="Avís d'ús de galetes">
+    <section class="cookie-banner" role="dialog" aria-live="polite" aria-label="Avís d'ús de galetes">
         <div class="container d-flex flex-column flex-md-row align-items-start justify-content-between gap-3">
 
             <p class="m-0 cookie-text">
@@ -269,7 +275,38 @@
             </div>
 
         </div>
-    </div>
+    </section>
 
+    <!-- Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script cookies -->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const banner = document.querySelector(".cookie-banner");
+        const btnAccept = document.querySelector(".solea-btn-accept");
+        const btnReject = document.querySelector(".solea-btn-reject");
+
+        // 1. Comprobar si el usuario ya tomó una decisión
+        const cookieDecision = localStorage.getItem("cookieDecision");
+
+        if (cookieDecision === "accepted" || cookieDecision === "rejected") {
+            banner.style.display = "none";
+        }
+
+        // 2. Aceptar cookies
+        btnAccept.addEventListener("click", (e) => {
+            e.preventDefault();
+            localStorage.setItem("cookieDecision", "accepted");
+            banner.style.display = "none";
+        });
+
+        // 3. Rechazar cookies
+        btnReject.addEventListener("click", (e) => {
+            e.preventDefault();
+            localStorage.setItem("cookieDecision", "rejected");
+            banner.style.display = "none";
+        });
+    });
+    </script>
 </body>
 </html>

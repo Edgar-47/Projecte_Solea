@@ -10,13 +10,12 @@
 /* ============== */
 /* RESET BÀSIC    */
 /* ============== */
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-/* ============== */
-/* COS PÀGINA     */
-/* ============== */
 body {
     margin: 0;
     font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -25,7 +24,7 @@ body {
 }
 
 /* ================== */
-/* TÍTOLS GENERALS    */
+/* TIPOGRAFIA         */
 /* ================== */
 h1,
 h2,
@@ -33,11 +32,11 @@ h3 {
     font-family: "Instrument Serif", serif;
     font-weight: normal;
     color: var(--solea-blue);
+    margin-top: 0;
 }
 
-/* títol principal */
 h1 {
-    font-size: 35px;
+    font-size: 2rem; /* base móvil, sube en desktop en media queries */
 }
 
 /* ========================= */
@@ -48,14 +47,14 @@ h1 {
     border-bottom: 1px solid rgba(0,0,0,0.02);
 }
 
-/* capçalera interior */
 .header-inner {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 18px 48px;
+    padding: 12px 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 16px;
 }
 
 /* zona logo */
@@ -65,14 +64,12 @@ h1 {
     gap: 4px;
 }
 
-/* enllaç logo */
 .logo-link {
     display: inline-block;
 }
 
-/* imatge logo */
 .logo-img {
-    height: 210px;
+    height: 120px;
     width: auto;
     display: block;
 }
@@ -80,7 +77,7 @@ h1 {
 /* frase logo */
 .logo-tagline {
     margin: 0;
-    font-size: 0.80rem;
+    font-size: 0.70rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: rgba(0,0,0,0.45);
@@ -89,7 +86,7 @@ h1 {
 
 /* ciutat logo */
 .logo-tagline span {
-    font-size: 0.5rem;
+    font-size: 0.55rem;
     letter-spacing: 0.22em;
 }
 
@@ -99,21 +96,22 @@ h1 {
     padding: 0;
     list-style: none;
     display: flex;
-    gap: 40px;
+    flex-wrap: wrap;              /* se adapta en móvil */
+    gap: 12px 24px;
+    justify-content: flex-end;
 }
 
 /* enllaços menú */
 .main-nav a {
     text-decoration: none;
     font-family: "Playfair Display", "Times New Roman", serif;
-    font-size: 20px;
+    font-size: 0.95rem;
     color: var(--solea-blue);
     letter-spacing: 0.06em;
     text-transform: none;
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-/* hover menú */
 .main-nav a:hover {
     opacity: 0.7;
     transform: translateY(-1px);
@@ -123,87 +121,89 @@ h1 {
 /* HERO / INTRO-SECCIÓ   */
 /* ===================== */
 .intro-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 56px 16px;
     display: flex;
+    flex-direction: column;
+    gap: 32px;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 80px 120px;
+    text-align: center;
 }
 
-/* text intro */
 .intro-text {
     flex: 1;
     font-size: 1rem;
     line-height: 1.6;
 }
 
-/* títol intro */
 .intro-text h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 2.2rem;
+    margin-bottom: 16px;
 }
 
-/* paràgraf intro */
 .intro-text p {
-    max-width: 550px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 /* imatge intro */
 .intro-image img {
-    width: 400px;
-    height: 400px;
-    border-radius: 50px;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    border-radius: 32px;
     object-fit: cover;
     transform: scale(1);
     transition: transform 1s ease, box-shadow 1s ease;
 }
 
-/* hover intro img */
 .intro-image img:hover {
-    transform: scale(1.10);
-    box-shadow: 5px 40px 50px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+    box-shadow: 5px 30px 40px rgba(0,0,0,0.18);
 }
 
 /* ===================== */
 /* SECCIÓ QUI SOM / WHO  */
 /* ===================== */
 .who-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 56px 16px;
     display: flex;
+    flex-direction: column;
+    gap: 32px;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 80px 120px;
+    text-align: center;
 }
 
-/* imatge qui som */
 .who-image img {
-    width: 400px;
-    height: 400px;
-    border-radius: 50px;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    border-radius: 32px;
     object-fit: cover;
     transition: transform 1s ease, box-shadow 1s ease;
 }
 
 .who-image img:hover {
-    transform: scale(1.10);
-    box-shadow: 5px 40px 50px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+    box-shadow: 5px 30px 40px rgba(0,0,0,0.18);
 }
 
-/* text qui som */
 .who-we-are {
     flex: 1;
-    text-align: left;
     font-size: 1rem;
     line-height: 1.6;
     max-width: 580px;
 }
 
 .who-we-are h2 {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .who-we-are p {
-    max-width: 550px;
+    max-width: 100%;
 }
 
 /* ===================== */
@@ -219,33 +219,32 @@ h1 {
     font-family: "Instrument Serif", serif;
     font-weight: normal;
     color: var(--solea-blue);
-    font-size: 2.1rem;
+    font-size: 1.8rem;
 }
 
 .precio-content p {
     margin: 0 0 4px;
 }
 
-/* quantitat preu */
 .precio-cantidad {
     font-family: "Instrument Serif", serif;
     margin-top: 10px;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
 }
 
 /* ===================== */
-/* SECCIÓ VALORS / PILARS*/
+/* SECCIÓ VALORS         */
 /* ===================== */
 .values-section {
     max-width: 1100px;
     margin: 3rem auto;
     text-align: center;
-    padding: 0 24px;
+    padding: 0 16px;
 }
 
 .values-section h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 0.5rem;
 }
 
@@ -257,7 +256,7 @@ h1 {
 }
 
 .value-card {
-    padding: 1.5rem;
+    padding: 1.4rem;
     border-radius: 16px;
     background-color: #ffffff;
     border: 1px solid rgba(82, 121, 142, 0.12);
@@ -269,7 +268,7 @@ h1 {
     margin-bottom: 0.5rem;
     font-family: "Instrument Serif", serif;
     color: var(--solea-blue);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .value-card p {
@@ -282,17 +281,17 @@ h1 {
 /* CAROUSEL SOLEA        */
 /* ===================== */
 .carousel-wrapper {
-    max-width: 650px;       /* ample màxim del “quadre” */
+    max-width: 650px;
     width: 100%;
     border-radius: 24px;
-    overflow: hidden;       /* recorta vores arrodonides */
+    overflow: hidden;
     box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+    margin: 0 auto;
 }
 
-/* altura controlada + proporcions */
 .carousel-wrapper .carousel img {
-    height: 650px;
     width: 100%;
+    height: clamp(320px, 70vh, 650px);
     object-fit: cover;
     object-position: 50% 25%;
 }
@@ -302,6 +301,7 @@ h1 {
 /* ============================ */
 .stats-section {
     background-color: var(--solea-bg);
+    padding: 56px 16px;
 }
 
 .stats-grid {
@@ -311,6 +311,8 @@ h1 {
 
 .stat-item {
     font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    text-align: center;
+    margin-bottom: 24px;
 }
 
 .stat-number {
@@ -332,14 +334,15 @@ h1 {
 /* ========================= */
 .album-section {
     background-color: var(--solea-bg);
+    padding: 56px 16px;
 }
 
 .album-subtitle {
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 2rem auto;
     color: rgba(0,0,0,0.55);
     font-size: 0.95rem;
+    text-align: center;
 }
 
 /* targeta Bootstrap */
@@ -357,14 +360,15 @@ h1 {
 
 /* imatge superior */
 .album-img {
-    height: 230px;
+    height: 220px;
     object-fit: cover;
     border-radius: 22px 22px 0 0;
+    width: 100%;
 }
 
 /* títol i text dins la card */
 .album-title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 10px;
 }
 
@@ -397,42 +401,41 @@ h1 {
 /* ========================= */
 .reviews-section {
     background-color: var(--solea-bg);
-    padding: 80px 120px;
+    padding: 56px 16px 96px;
     text-align: center;
-    margin-bottom: 120px; /* evitar solapament amb footer */
 }
 
 .reviews-section h2 {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 /* grid ressenyes */
 .reviews-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
 }
 
 /* targeta ressenya */
 .review-card {
     background: #ffffff;
     border-radius: 18px;
-    padding: 30px 28px 40px;
+    padding: 24px 20px 32px;
     text-align: left;
     box-shadow: 0 6px 18px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .review-card:hover {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
     box-shadow: 10px 20px 40px #52798E;
 }
 
 /* text ressenya */
 .review-card blockquote {
-    font-size: 1.05rem;
+    font-size: 1rem;
     line-height: 1.6;
-    margin: 0 0 20px 0;
+    margin: 0 0 16px 0;
     font-style: italic;
 }
 
@@ -441,6 +444,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 12px;
 }
 
 /* usuari */
@@ -470,11 +474,13 @@ h1 {
 /* ========================= */
 .site-footer {
     background-color: var(--solea-bg);
-    padding: 40px 120px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 32px 16px;
     border-top: 1px solid rgba(0,0,0,0.02);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
 }
 
 /* marca footer */
@@ -482,11 +488,12 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    align-items: center;
 }
 
 /* logo footer */
 .footer-logo-img {
-    height: 210px;
+    height: 120px;
     width: auto;
     display: block;
 }
@@ -514,7 +521,8 @@ h1 {
     padding: 0;
     list-style: none;
     display: flex;
-    gap: 24px;
+    gap: 16px;
+    justify-content: center;
 }
 
 /* socials enllaç */
@@ -525,8 +533,8 @@ h1 {
 
 /* socials icona */
 .social-list img {
-    width: 60px;
-    height: 60px;
+    width: 48px;
+    height: 48px;
     display: block;
     filter: grayscale(100%);
     opacity: 0.7;
@@ -538,28 +546,27 @@ h1 {
     opacity: 1;
     transform: translateY(-2px);
 }
+
 /* ========================= */
 /*   FORMULARI SOLEA        */
 /* ========================= */
-
 .solea-form-section {
     background-color: var(--solea-bg);
-    padding: 80px 0;
+    padding: 56px 0;
 }
 
-/* Card / contenidor del formulari (si tens un .card, .container, etc.) */
 .solea-form-section .card {
-    border-radius: 28px;
+    border-radius: 24px;
     border: none;
     background-color: #ffffff;
-    padding: 40px 32px;
+    padding: 28px 20px;
 }
 
 /* Títol i subtítol dins el formulari */
 .solea-form-section h2 {
     font-family: "Instrument Serif", serif;
     color: var(--solea-blue);
-    font-size: 2.2rem;
+    font-size: 1.8rem;
 }
 
 .solea-form-section .solea-form-subtitle,
@@ -585,7 +592,7 @@ h1 {
     background-color: #ffffff;
 }
 
-/* Textarea: una mica menys pill, més bloc */
+/* Textarea */
 .solea-form-section textarea.form-control {
     border-radius: 20px;
     min-height: 140px;
@@ -599,7 +606,7 @@ h1 {
     box-shadow: 0 0 0 0.15rem rgba(82,121,142,0.20);
 }
 
-/* Botó principal – funciona si usas .btn-primary o .solea-btn-primary */
+/* Botó principal */
 .solea-form-section .btn-primary,
 .solea-form-section .solea-btn-primary {
     border-radius: 999px;
@@ -626,97 +633,152 @@ h1 {
     font-size: 0.8rem;
     color: rgba(0,0,0,0.55);
 }
+
 /* ========================= */
-/*  BANNER COOKIES - SOLEA   */
+/* BREAKPOINTS BOOTSTRAP    */
 /* ========================= */
 
-.cookie-banner {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 18px 0;
-    background-color: var(--solea-bg); /* #FDF9F4 */
-    border-top: 1px solid rgba(0,0,0,0.15);
-    z-index: 9999;
-}
+/* ≥ 576px (sm) */
+@media (min-width: 576px) {
+    .logo-img,
+    .footer-logo-img {
+        height: 140px;
+    }
 
-.cookie-text {
-    color: var(--solea-text); /* #3B4A4F */
-    font-size: 14px;
-    line-height: 1.4;
-}
-
-.cookie-link {
-    color: var(--solea-blue); /* #52798E */
-    font-weight: 500;
-    text-decoration: underline;
-}
-
-/* Botón Aceptar */
-.solea-btn-accept {
-    background-color: var(--solea-blue); /* azul solea */
-    color: #fff;
-    border-radius: 8px;
-    padding: 4px 12px;
-    border: none;
-}
-
-/* Botón Rechazar */
-.solea-btn-reject {
-    background-color: transparent;
-    border: 1px solid var(--solea-blue);
-    color: var(--solea-blue);
-    border-radius: 8px;
-    padding: 4px 12px;
-}
-
-
-
-/* Responsiu */
-@media (max-width: 768px) {
     .solea-form-section .card {
-        padding: 28px 20px;
-        border-radius: 22px;
+        padding: 32px 24px;
     }
 }
 
-/* ========================= */
-/* RESPONSIVITAT BÀSICA     */
-/* ========================= */
-@media (max-width: 992px) {
-    .logo-img {
-        height: 150px;
-    }
-
-    .intro-text p {
-        max-width: 100%;
-    }
-
-    .precio-img-round {
-        height: 320px;
-    }
-
-    .section-title {
+/* ≥ 768px (md) – tablets */
+@media (min-width: 768px) {
+    h1 {
         font-size: 2.4rem;
+    }
+
+    .header-inner {
+        padding: 16px 32px;
+    }
+
+    .intro-section,
+    .who-section,
+    .album-section,
+    .stats-section,
+    .reviews-section {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .intro-section,
+    .who-section {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+
+    .intro-text p,
+    .who-we-are p {
+        margin: 0;
+        max-width: 550px;
+    }
+
+    .intro-image img,
+    .who-image img {
+        max-width: 400px;
+        border-radius: 40px;
+    }
+
+    .stat-item {
+        text-align: left;
+    }
+
+    .site-footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .footer-brand {
+        align-items: flex-start;
+    }
+
+    .solea-form-section .card {
+        padding: 40px 32px;
+        border-radius: 28px;
+    }
+
+    .album-img {
+        height: 240px;
+    }
+}
+
+/* ≥ 992px (lg) – desktop */
+@media (min-width: 992px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .header-inner {
+        padding: 18px 48px;
+    }
+
+    .logo-img,
+    .footer-logo-img {
+        height: 180px;
+    }
+
+    .main-nav ul {
+        gap: 40px;
+    }
+
+    .main-nav a {
+        font-size: 1.05rem;
     }
 
     .intro-section,
     .who-section,
     .reviews-section {
-        padding: 60px 24px;
-        flex-direction: column;
-        text-align: center;
+        padding: 80px 80px;
     }
 
-    .reviews-grid {
-        grid-template-columns: 1fr;
+    .reviews-section {
+        padding-bottom: 120px;
+    }
+
+    .album-section,
+    .stats-section {
+        padding: 80px 80px;
+    }
+
+    .values-section {
+        padding: 0 24px;
+    }
+
+    .album-img {
+        height: 260px;
     }
 
     .site-footer {
-        flex-direction: column;
-        gap: 24px;
-        padding: 32px 24px;
-        text-align: center;
+        padding: 40px 80px;
+    }
+}
+
+/* ≥ 1200px (xl) – desktop amplio */
+@media (min-width: 1200px) {
+    .intro-section,
+    .who-section,
+    .reviews-section,
+    .album-section,
+    .stats-section {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .logo-img,
+    .footer-logo-img {
+        height: 210px;
     }
 }
