@@ -163,8 +163,16 @@ h1 {
     box-shadow: 5px 30px 40px rgba(0,0,0,0.18);
 }
 
+.intro-image figcaption {
+    margin-top: 12px;
+    font-family: "Instrument Serif", serif;
+    font-size: 20px;
+    color: var(--solea-text);
+    opacity: 0.85;
+    letter-spacing: 0.5px;
+}
 /* ===================== */
-/* SECCIÓ QUI SOM / WHO  */
+/* SECCIÓ QUI SOM        */
 /* ===================== */
 .who-section {
     max-width: 1200px;
@@ -297,7 +305,7 @@ h1 {
 }
 
 /* ============================ */
-/* STATS / CLIENTS SATISFETS   */
+/*          STATS               */
 /* ============================ */
 .stats-section {
     background-color: var(--solea-bg);
@@ -330,7 +338,7 @@ h1 {
 }
 
 /* ========================= */
-/* ALBUM SERVEIS / CARDS    */
+/* ALBUM SERVEIS             */
 /* ========================= */
 .album-section {
     background-color: var(--solea-bg);
