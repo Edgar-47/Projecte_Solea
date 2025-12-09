@@ -23,8 +23,7 @@
     <link rel="icon" href="img/Solea_logo_notext.png" type="image/png">
     <!-- tipografies elegants -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">   
     <!-- bootstrap css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <!-- full estils -->
@@ -57,21 +56,20 @@
     }
     </script>
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/Restaurant">
     <!-- CAPÇALERA PRINCIPAL -->
     <header class="site-header">
         <div class="header-inner">
             <!-- logo principal -->
-            <div class="logo-area">
-                <a href="index.html" class="logo-link">
-                    <img src="img/Solea_logo_notext.png" alt="Solea - Catering, Coffee & Cocktails" class="logo-img">
+            <div class="logo-area" itemprop="brand" itemscope itemtype="https://schema.org/Brand">
+                <a href="index.html" class="logo-link" itemprop="url">
+                    <img src="img/Solea_logo_notext.png" alt="Solea - Catering, Coffee & Cocktails" class="logo-img" itemprop="logo">
                 </a>
-                <p class="logo-tagline">
+                <p class="logo-tagline" itemprop="slogan">
                     CATERING, COFFEE & COCKTAILS<br>
-                    <strong>Miami Platja</strong>
+                    <strong itemprop="name">Miami Platja</strong>
                 </p>
             </div>
-
             <!-- menú navegació -->
             <nav class="main-nav" aria-label="Navegació principal">
                 <ul>
@@ -84,17 +82,15 @@
             </nav>
         </div>
     </header>
-
-    <main>
+    <main itemprop="about">
         <!-- SECCIÓ INTRODUCCIÓ -->
-        <section class="intro-section py-5" aria-labelledby="intro-section-title">
-            
+        <section class="intro-section py-5" aria-labelledby="intro-section-title">            
             <div class="container">
                 <div class="row align-items-center gy-4">
                     <!-- text introductori -->
                     <div class="col-lg-6">
                         <h2>Equip</h2>
-                        <article class="intro-text" aria-labelledby="team-title">
+                        <article class="intro-text" aria-labelledby="team-title" itemprop="description">
                             <!-- h3 per evitar warning -->
                             <h3 id="team-title">El Nostre Equip</h3>
                             <p>
@@ -115,11 +111,10 @@
                             </p>
                         </article>
                     </div>
-
                     <!-- imatge introductoria -->
                     <div class="col-lg-6">
                         <figure class="intro-image text-center">
-                            <img src="img/Solea_Equip.png" alt="Equip Solea" class="img-fluid intro-image-img">
+                            <img src="img/Solea_Equip.png" alt="Equip Solea" class="img-fluid intro-image-img" itemprop="image">
                             <figcaption>Cuiners professionals de Solea durant un esdeveniment</figcaption>
                         </figure>
                     </div>
@@ -130,12 +125,11 @@
         <section class="intro-section py-5" aria-labelledby="intro-section-title">
             <!-- heading oculta per secció -->
             <h2 id="intro-section-title" class="visually-hidden">Sobre nosaltres · Presentació</h2>
-
             <div class="container">
                 <div class="row align-items-center gy-4">
                     <!-- text introductori -->
                     <div class="col-lg-6">
-                        <article class="intro-text" aria-labelledby="filosofia-title">
+                        <article class="intro-text" aria-labelledby="filosofia-title" itemprop="description">
                             <!-- h3 per evitar warning -->
                             <h3 id="filosofia-title">Filosofia SOLEA</h3>
                             <p>A SOLEA creiem que l’excel·lència no és un detall: és una actitud. Treballem cada servei amb la precisió d’un artesà i la calidesa mediterrània que ens defineix. Som un equip jove, exigent i apassionat, decidit a transformar cada esdeveniment en una experiència sensorial única.</p>
@@ -152,13 +146,12 @@
                 </div>
             </div>
         </section>
-
         <!-- SECCIÓ EQUIP SOLEA -->
         <section class="album-section py-5" aria-labelledby="equip-solea-titol">
             <div class="container">
                 <header class="text-center mb-5">
                     <h2 id="equip-solea-titol" class="section-title mb-3">El nostre equip</h2>
-                    <p class="album-subtitle mb-0">
+                    <p class="album-subtitle mb-0" itemprop="description">
                         Darrere de cada esdeveniment hi ha persones. A SOLEA, 
                         el nostre equip combina rigor, sensibilitat i passió 
                         per la gastronomia i l’hospitalitat. Som un grup jove, 
@@ -166,25 +159,25 @@
                         que se sentin úniques, elegants i memorables.
                     </p>
                 </header>
-
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                     <!-- targeta 1 xef executiu -->
                     <!-- sense role listitem -->
-                    <article class="col album-card">
+                    <article class="col album-card" itemscope itemtype="https://schema.org/Person" itemprop="employee">
                         <div class="card h-100 shadow-sm">
                             <figure class="mb-0">
                                 <img 
                                     src="img/Solea_Xef.png" 
                                     class="card-img-top album-img" 
                                     alt="Xef executiu de SOLEA preparant un plat durant un servei de càtering"
+                                    itemprop="image"
                                 >
                             </figure>
                             <div class="card-body d-flex flex-column">
-                                <h3 class="card-title album-title">Adrià Soler</h3>
-                                <p class="album-role text-muted mb-2">
+                                <h3 class="card-title album-title" itemprop="name">Adrià Soler</h3>
+                                <p class="album-role text-muted mb-2" itemprop="jobTitle">
                                     Xef executiu · SOLEA Catering
                                 </p>
-                                <p class="card-text album-text">
+                                <p class="card-text album-text" itemprop="description">
                                     Responsable de dissenyar i dirigir tota la proposta 
                                     gastronòmica de SOLEA. Combina tècnica, creativitat 
                                     i un profund respecte pel producte per crear plats 
@@ -198,23 +191,23 @@
                             </div>
                         </div>
                     </article>
-
                     <!-- targeta 2 cap de sala -->
-                    <article class="col album-card">
+                    <article class="col album-card" itemscope itemtype="https://schema.org/Person" itemprop="employee">
                         <div class="card h-100 shadow-sm">
                             <figure class="mb-0">
                                 <img 
                                     src="img/Solea_Cap_Sala.png" 
                                     class="card-img-top album-img" 
                                     alt="Equip de sala de SOLEA atenent un esdeveniment"
+                                    itemprop="image"
                                 >
                             </figure>
                             <div class="card-body d-flex flex-column">
-                                <h3 class="card-title album-title">Jose Rovira</h3>
-                                <p class="album-role text-muted mb-2">
+                                <h3 class="card-title album-title" itemprop="name">Jose Rovira</h3>
+                                <p class="album-role text-muted mb-2" itemprop="jobTitle">
                                     Cap de sala · Coordinació de servei
                                 </p>
-                                <p class="card-text album-text">
+                                <p class="card-text album-text" itemprop="description">
                                     Garanteix una experiència fluida, càlida i impecable 
                                     en cada esdeveniment. Amb un lideratge discret i 
                                     metòdic, coordina l’equip de sala perquè cada detall — 
@@ -228,23 +221,23 @@
                             </div>
                         </div>
                     </article>
-
                     <!-- targeta 3 cap de màrqueting -->
-                    <article class="col album-card">
+                    <article class="col album-card" itemscope itemtype="https://schema.org/Person" itemprop="employee">
                         <div class="card h-100 shadow-sm">
                             <figure class="mb-0">
                                 <img 
                                     src="img/Solea_Cap_Marketing.png" 
                                     class="card-img-top album-img" 
                                     alt="Equip de comunicació i imatge de SOLEA"
+                                    itemprop="image"
                                 >
                             </figure>
                             <div class="card-body d-flex flex-column">
-                                <h3 class="card-title album-title">Alma Fernández</h3>
-                                <p class="album-role text-muted mb-2">
+                                <h3 class="card-title album-title" itemprop="name">Alma Fernández</h3>
+                                <p class="album-role text-muted mb-2" itemprop="jobTitle">
                                     Cap de màrqueting · Imatge i estratègia
                                 </p>
-                                <p class="card-text album-text">
+                                <p class="card-text album-text" itemprop="description">
                                     Impulsa la identitat de SOLEA i connecta la marca 
                                     amb el públic adequat. Defineix el relat, el to visual 
                                     i les campanyes que expliquen qui som i què oferim. 
@@ -258,18 +251,15 @@
                             </div>
                         </div>
                     </article>
-
                 </div>
             </div>
         </section>
-
         <!-- SECCIÓ CARRUSEL IMATGES -->
         <!-- usem section nivell alt -->
         <section class="py-5" aria-label="Galeria d'imatges de Solea">
             <div class="container d-flex justify-content-center">
                 <div class="carousel-wrapper">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">                       
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                                 class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -278,7 +268,6 @@
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                                 aria-label="Slide 3"></button>
                         </div>
-
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img class="d-block w-100" src="img/Solea_Cooffe_Mesa.png" alt="Taula Solea">
@@ -290,7 +279,6 @@
                                 <img class="d-block w-100" src="img/Serveis_fondo.png" alt="Espai Solea">
                             </div>
                         </div>
-
                         <button class="carousel-control-prev" type="button"
                                 data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -306,21 +294,19 @@
             </div>
         </section>
     </main>
-
     <!-- PEU PÀGINA -->
     <footer class="site-footer border-top py-4">
         <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-4">
             <!-- marca footer -->
             <div class="footer-brand">
-                <a href="index.html" class="footer-logo-link">
-                    <img src="img/Solea_logo_notext.png" alt="Solea - Catering, Coffee & Cocktails" class="footer-logo-img">
+                <a href="index.html" class="footer-logo-link" itemprop="url">
+                    <img src="img/Solea_logo_notext.png" alt="Solea - Catering, Coffee & Cocktails" class="footer-logo-img" itemprop="logo">
                 </a>
                 <p class="footer-tagline">
                     CATERING, COFFEE & COCKTAILS<br>
-                    <strong>MIAMI PLATJA</strong>
+                    <strong itemprop="name">MIAMI PLATJA</strong>
                 </p>
             </div>
-
             <!-- XARXES SOCIALS -->
             <div class="footer-social">
                 <div>
@@ -329,17 +315,17 @@
                 </div>
                 <ul class="social-list">
                     <li>
-                        <a href="https://www.facebook.com/profile.php?id=61584778772038" aria-label="Facebook">
+                        <a href="https://www.facebook.com/profile.php?id=61584778772038" aria-label="Facebook" itemprop="sameAs">
                             <img src="img/Facebook_logo_fosc.png" alt="Facebook">
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/soleacateringcoffee/?hl=es-es" aria-label="Instagram">
+                        <a href="https://www.instagram.com/soleacateringcoffee/?hl=es-es" aria-label="Instagram" itemprop="sameAs">
                             <img src="img/Instagram_logo_fosc.png" alt="Instagram">
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.tiktok.com/@solea_catering" aria-label="TikTok">
+                        <a href="https://www.tiktok.com/@solea_catering" aria-label="TikTok" itemprop="sameAs">
                             <img src="img/TikTok_logo_fosc.png" alt="TikTok">
                         </a>
                     </li>
@@ -347,25 +333,20 @@
             </div>
         </div>
     </footer>
-
     <!-- BANNER GALETES -->
     <!-- banner com div accessible -->
     <div class="cookie-banner" role="dialog" aria-live="polite">
         <div class="container d-flex flex-column flex-md-row align-items-start justify-content-between gap-3">
-
             <p class="m-0 cookie-text">
                 Utilitzem galetes per millorar la teva experiència de navegació
                 <a href="cookies.html" class="cookie-link">Más información</a>.
             </p>
-
             <div class="d-flex gap-2">
                 <a href="#" class="btn solea-btn-accept btn-sm">Acceptar</a>
                 <a href="#" class="btn solea-btn-reject btn-sm">Rebutjar</a>
             </div>
-
         </div>
     </div>
-
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- script galetes -->
@@ -374,21 +355,18 @@
         const banner = document.querySelector(".cookie-banner");
         const btnAccept = document.querySelector(".solea-btn-accept");
         const btnReject = document.querySelector(".solea-btn-reject");
-
         // comprovar decisió prèvia
         const cookieDecision = localStorage.getItem("cookieDecision");
 
         if (cookieDecision === "accepted" || cookieDecision === "rejected") {
             banner.style.display = "none";
         }
-
         // acceptar galetes
         btnAccept.addEventListener("click", (e) => {
             e.preventDefault();
             localStorage.setItem("cookieDecision", "accepted");
             banner.style.display = "none";
         });
-
         // rebutjar galetes
         btnReject.addEventListener("click", (e) => {
             e.preventDefault();
