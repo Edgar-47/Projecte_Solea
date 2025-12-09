@@ -67,19 +67,19 @@
     }
     </script>
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/Restaurant">
 
     <!-- CAPÇALERA PRINCIPAL -->
     <header class="site-header">
         <div class="header-inner">
             <!-- ÀREA LOGO -->
             <div class="logo-area">
-                <a href="index.html" class="logo-link">
-                    <img src="img/Solea_logo_notext.png" alt="Solea - Catering, Coffee & Cocktails" class="logo-img">
+                <a href="index.html" class="logo-link" itemprop="url">
+                    <img src="img/Solea_logo_notext.png" alt="Solea - Catering, Coffee & Cocktails" class="logo-img" itemprop="logo">
                 </a>
-                <p class="logo-tagline">
+                <p class="logo-tagline" itemprop="slogan">
                     CATERING, COFFEE & COCKTAILS<br>
-                    <strong>Miami Platja</strong>
+                    <strong itemprop="addressLocality">Miami Platja</strong>
                 </p>
             </div>
 
@@ -101,14 +101,14 @@
         <!-- SECCIÓ INTRODUCCIÓ -->
         <section class="intro-section py-5" aria-labelledby="intro-title">
             <div class="container">
-                <h2 id="intro-title" class="section-title">
+                <h2 id="intro-title" class="section-title" itemprop="name">
                     Premium Catering, Coffee & Cocktails
                 </h2>
 
                 <div class="row align-items-center gy-4">
                     <!-- TEXT INTRODUCTORI -->
                     <div class="col-lg-6">
-                        <div class="intro-text">
+                        <div class="intro-text" itemprop="description">
                             <p>
                                 Solea és el teu refugi mediterrani amb ànima pròpia: un espai que respira calma de dia i carisma de nit. 
                                 Al matí és un cafè elegant, lluminós i minimalista, on el bon cafè, la rebosteria artesana i els esmorzars
@@ -132,9 +132,9 @@
 
                     <!-- IMATGE INTRODUCTÒRIA -->
                     <div class="col-lg-6 text-center text-lg-end">
-                        <figure class="intro-image m-0">
-                            <img src="img/Solea_Fondo.png" alt="Espai Solea" class="img-fluid intro-image-img">
-                            <figcaption>Còctels d’autor al capvespre mediterrani</figcaption>
+                        <figure class="intro-image m-0" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                            <img src="img/Solea_Fondo.png" alt="Espai Solea" class="img-fluid intro-image-img" itemprop="contentUrl">
+                            <figcaption itemprop="caption">Còctels d’autor al capvespre mediterrani</figcaption>
                         </figure>
                     </div>
                 </div>
@@ -151,15 +151,15 @@
                 <div class="row align-items-center gy-4">
                     <!-- IMATGE QUI SOM -->
                     <div class="col-lg-6 text-center text-lg-start">
-                        <figure class="intro-image m-0">
-                            <img src="img/Solea_Fondo1.png" alt="Cocteleria Solea" class="img-fluid intro-image-img">
-                            <figcaption>Sopar exclusiu a càrrec de Solea</figcaption>
+                        <figure class="intro-image m-0" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                            <img src="img/Solea_Fondo1.png" alt="Cocteleria Solea" class="img-fluid intro-image-img" itemprop="contentUrl">
+                            <figcaption itemprop="caption">Sopar exclusiu a càrrec de Solea</figcaption>
                         </figure>
                     </div>
 
                     <!-- TEXT QUI SOM -->
                     <div class="col-lg-6">
-                        <div class="who-we-are">
+                        <div class="who-we-are" itemprop="description">
                             <p>
                                 Solea és un concepte nascut amb ambició, estil i una idea molt clara: portar una experiència Mediterrània 
                                 moderna a tots aquells que valoren la qualitat, el detall i l’elegància sense artificis. Darrere del projecte
@@ -194,73 +194,73 @@
 
             <div class="reviews-grid">
 
-                <article class="review-card">
+                <article class="review-card" itemscope itemtype="https://schema.org/Review" itemprop="review">
                     <h3 class="visually-hidden">Ressenya de Laura</h3>
-                    <blockquote>“Un lloc fantàstic i superbònic”</blockquote>
+                    <blockquote itemprop="reviewBody">“Un lloc fantàstic i superbònic”</blockquote>
                     <footer>
-                        <address class="review-user">
+                        <address class="review-user" itemprop="author" itemscope itemtype="https://schema.org/Person">
                             <img src="img/Client1.png" alt="Foto usuària Laura">
-                            <strong>Laura</strong>
+                            <strong itemprop="name">Laura</strong>
                         </address>
                         <img src="img/google_reviews.png" alt="Valoració Google Reviews" class="review-stars">
                     </footer>
                 </article>
 
-                <article class="review-card">
+                <article class="review-card" itemscope itemtype="https://schema.org/Review" itemprop="review">
                     <h3 class="visually-hidden">Ressenya de Jose</h3>
-                    <blockquote>“El millor cafè de la zona”</blockquote>
+                    <blockquote itemprop="reviewBody">“El millor cafè de la zona”</blockquote>
                     <footer>
-                        <address class="review-user">
+                        <address class="review-user" itemprop="author" itemscope itemtype="https://schema.org/Person">
                             <img src="img/Client2.png" alt="Foto usuari Jose">
-                            <strong>Jose</strong>
+                            <strong itemprop="name">Jose</strong>
                         </address>
                         <img src="img/google_reviews.png" alt="Valoració Google Reviews" class="review-stars">
                     </footer>
                 </article>
 
-                <article class="review-card">
+                <article class="review-card" itemscope itemtype="https://schema.org/Review" itemprop="review">
                     <h3 class="visually-hidden">Ressenya de Marc</h3>
-                    <blockquote>“Un menjar boníssim”</blockquote>
+                    <blockquote itemprop="reviewBody">“Un menjar boníssim”</blockquote>
                     <footer>
-                        <address class="review-user">
+                        <address class="review-user" itemprop="author" itemscope itemtype="https://schema.org/Person">
                             <img src="img/Client3.png" alt="Foto usuari Marc">
-                            <strong>Marc</strong>
+                            <strong itemprop="name">Marc</strong>
                         </address>
                         <img src="img/google_reviews.png" alt="Valoració Google Reviews" class="review-stars">
                     </footer>
                 </article>
 
-                <article class="review-card">
+                <article class="review-card" itemscope itemtype="https://schema.org/Review" itemprop="review">
                     <h3 class="visually-hidden">Ressenya d'Aleix</h3>
-                    <blockquote>“Ambient preciós i menjar molt cuidat. Tornaré a contractar-los.”</blockquote>
+                    <blockquote itemprop="reviewBody">“Ambient preciós i menjar molt cuidat. Tornaré a contractar-los.”</blockquote>
                     <footer>
-                        <address class="review-user">
+                        <address class="review-user" itemprop="author" itemscope itemtype="https://schema.org/Person">
                             <img src="img/Client4.png" alt="Foto usuari Aleix">
-                            <strong>Aleix</strong>
+                            <strong itemprop="name">Aleix</strong>
                         </address>
                         <img src="img/google_reviews.png" alt="Valoració Google Reviews" class="review-stars">
                     </footer>
                 </article>
 
-                <article class="review-card">
+                <article class="review-card" itemscope itemtype="https://schema.org/Review" itemprop="review">
                     <h3 class="visually-hidden">Ressenya de Paula</h3>
-                    <blockquote>“Els còctels són finíssims i molt ben equilibrats.”</blockquote>
+                    <blockquote itemprop="reviewBody">“Els còctels són finíssims i molt ben equilibrats.”</blockquote>
                     <footer>
-                        <address class="review-user">
+                        <address class="review-user" itemprop="author" itemscope itemtype="https://schema.org/Person">
                             <img src="img/Client5.png" alt="Foto usuària Paula">
-                            <strong>Paula</strong>
+                            <strong itemprop="name">Paula</strong>
                         </address>
                         <img src="img/google_reviews.png" alt="Valoració Google Reviews" class="review-stars">
                     </footer>
                 </article>
 
-                <article class="review-card">
+                <article class="review-card" itemscope itemtype="https://schema.org/Review" itemprop="review">
                     <h3 class="visually-hidden">Ressenya de Clara</h3>
-                    <blockquote>“Una fusió mediterrània molt ben executada.”</blockquote>
+                    <blockquote itemprop="reviewBody">“Una fusió mediterrània molt ben executada.”</blockquote>
                     <footer>
-                        <address class="review-user">
+                        <address class="review-user" itemprop="author" itemscope itemtype="https://schema.org/Person">
                             <img src="img/Client6.png" alt="Foto usuària Clara">
-                            <strong>Clara</strong>
+                            <strong itemprop="name">Clara</strong>
                         </address>
                         <img src="img/google_reviews.png" alt="Valoració Google Reviews" class="review-stars">
                     </footer>
@@ -274,13 +274,13 @@
     <footer class="site-footer">
 
         <!-- MARCA FOOTER -->
-        <div class="footer-brand">
-            <a href="index.html" class="footer-logo-link">
-                <img src="img/Solea_logo_notext.png" alt="Solea - Catering, Coffee & Cocktails" class="footer-logo-img">
+        <div class="footer-brand" itemscope itemtype="https://schema.org/Organization" itemprop="brand">
+            <a href="index.html" class="footer-logo-link" itemprop="url">
+                <img src="img/Solea_logo_notext.png" alt="Solea - Catering, Coffee & Cocktails" class="footer-logo-img" itemprop="logo">
             </a>
-            <p class="footer-tagline">
+            <p class="footer-tagline" itemprop="name">
                 CATERING, COFFEE & COCKTAILS<br>
-                <strong>MIAMI PLATJA</strong>
+                <strong itemprop="addressLocality">MIAMI PLATJA</strong>
             </p>
         </div>
 
@@ -292,17 +292,17 @@
             </div>
             <ul class="social-list">
                 <li>
-                    <a href="https://www.facebook.com/profile.php?id=61584778772038" aria-label="Facebook">
+                    <a href="https://www.facebook.com/profile.php?id=61584778772038" aria-label="Facebook" itemprop="sameAs">
                         <img src="img/Facebook_logo_fosc.png" alt="Facebook">
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/soleacateringcoffee/?hl=es-es" aria-label="Instagram">
+                    <a href="https://www.instagram.com/soleacateringcoffee/?hl=es-es" aria-label="Instagram" itemprop="sameAs">
                         <img src="img/Instagram_logo_fosc.png" alt="Instagram">
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.tiktok.com/@solea_catering" aria-label="TikTok">
+                    <a href="https://www.tiktok.com/@solea_catering" aria-label="TikTok" itemprop="sameAs">
                         <img src="img/TikTok_logo_fosc.png" alt="TikTok">
                     </a>
                 </li>
@@ -363,4 +363,3 @@
     </script>
 </body>
 </html>
-
