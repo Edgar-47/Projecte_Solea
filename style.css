@@ -532,109 +532,139 @@ h1 {
     font-size: 0.8rem; /* mida petita */
     color: rgba(0,0,0,0.55); /* gris suau */
 }
+/* BANNER COOKIES*/
+.cookie-banner {
+    position: fixed;           
+    left: 0;
+    right: 0;
+    bottom: 0;             
+    width: 100%;
+    background-color: rgba(253, 249, 244, 0.98);
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.15);
+    z-index: 9999;             
+    padding: 0.75rem 1rem;
+}
+/* centrar contingut dins del banner */
+.cookie-banner .container {
+    max-width: 960px;
+    margin-inline: auto;
+}
+/* text una mica més petit i compacte en mòbil */
+.cookie-text {
+    font-size: 0.9rem;
+}
 /* RESPONSIVE — adaptació */
 /* ≥ 576px (sm) — mòbil gran */
 @media (min-width: 576px) {
     .logo-img,
     .footer-logo-img {
-        height: 140px; /* logo més gran */
+        height: 140px; 
     }
     .solea-form-section .card {
-        padding: 32px 24px; /* més espai */
+        padding: 32px 24px; 
+    }
+    .cookie-banner .container {
+        align-items: stretch !important;
+    }
+    .cookie-banner .d-flex {
+        width: 100%;
+    }
+    .cookie-banner .d-flex.gap-2 {
+        justify-content: flex-start;
     }
 }
 /* ≥ 768px (md) — tablet */
 @media (min-width: 768px) {
     h1 {
-        font-size: 2.4rem; /* títol més gran */
+        font-size: 2.4rem; 
     }
     .header-inner {
-        padding: 16px 32px; /* més aire */
+        padding: 16px 32px; 
     }
     .intro-section,
     .who-section,
     .album-section,
     .stats-section,
     .reviews-section {
-        padding-left: 32px; /* espai lateral */
+        padding-left: 32px; 
         padding-right: 32px;
     }
     .intro-section,
     .who-section {
-        flex-direction: row; /* layout horitzontal */
-        align-items: center; /* centrat */
-        text-align: left; /* text esquerra */
+        flex-direction: row; 
+        align-items: center;
+        text-align: left; 
     }
     .intro-text p,
     .who-we-are p {
-        margin: 0; /* treure marge */
-        max-width: 550px; /* ample text */
+        margin: 0; 
+        max-width: 550px; 
     }
     .intro-image img,
     .who-image img {
-        max-width: 400px; /* imatge gran */
-        border-radius: 40px; /* rodons */
+        max-width: 400px; 
+        border-radius: 40px; 
     }
     .stat-item {
-        text-align: left; /* alineació esquerra */
+        text-align: left; 
     }
     .site-footer {
-        flex-direction: row; /* horitzontal */
-        align-items: center; /* centrat */
-        justify-content: space-between; /* separar */
-        text-align: left; /* text esquerra */
-        padding-left: 32px; /* marge */
+        flex-direction: row;
+        align-items: center; 
+        justify-content: space-between; 
+        text-align: left; 
+        padding-left: 32px; 
         padding-right: 32px;
     }
     .footer-brand {
-        align-items: flex-start; /* alineació esquerra */
+        align-items: flex-start; 
     }
     .solea-form-section .card {
-        padding: 40px 32px; /* espai card */
-        border-radius: 28px; /* rodons */
+        padding: 40px 32px; 
+        border-radius: 28px; 
     }
     .album-img {
-        height: 240px; /* imatge més alta */
+        height: 240px;
     }
 }
 /* ≥ 992px (lg) — escriptori */
 @media (min-width: 992px) {
     h1 {
-        font-size: 2.8rem; /* títol gran */
+        font-size: 2.8rem; 
     }
     .header-inner {
-        padding: 18px 48px; /* més espai */
+        padding: 18px 48px; 
     }
     .logo-img,
     .footer-logo-img {
-        height: 180px; /* logo gran */
+        height: 180px; 
     }
     .main-nav ul {
-        gap: 40px; /* separació gran */
+        gap: 40px; 
     }
     .main-nav a {
-        font-size: 1.05rem; /* mida links */
+        font-size: 1.05rem; 
     }
     .intro-section,
     .who-section,
     .reviews-section {
-        padding: 80px 80px; /* espai ampli */
+        padding: 80px 80px; 
     }
     .reviews-section {
-        padding-bottom: 120px; /* espai inferior */
+        padding-bottom: 120px; 
     }
     .album-section,
     .stats-section {
-        padding: 80px 80px; /* espai ampli */
+        padding: 80px 80px; 
     }
     .values-section {
-        padding: 0 24px; /* marge */
+        padding: 0 24px; 
     }
     .album-img {
-        height: 260px; /* imatge gran */
+        height: 260px; 
     }
     .site-footer {
-        padding: 40px 80px; /* espai */
+        padding: 40px 80px; 
     }
 }
 /* ≥ 1200px (xl) — gran escriptori */
@@ -644,11 +674,11 @@ h1 {
     .reviews-section,
     .album-section,
     .stats-section {
-        padding-left: 120px; /* espai ample */
+        padding-left: 120px; 
         padding-right: 120px;
     }
     .logo-img,
     .footer-logo-img {
-        height: 210px; /* logo major */
+        height: 210px; 
     }
 }
